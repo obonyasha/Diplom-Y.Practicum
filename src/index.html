@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title></title>
-    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="description" content="Сервис для анализа происходящих в мире событий">
+  <meta name="author" lang="ru" content="Степанова Татьяна">
+  <title>Что творится в мире?</title>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+  <link rel="shortcut icon" href="%=require(./images/Favicon A.svg).default%" type="image/svg">
 </head>
 <body>
-    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+  <div class="page">
+
+  </div>
+  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
+
 </html>
