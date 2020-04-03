@@ -12,7 +12,29 @@
 </head>
 <body>
   <div class="page">
-
+    <div class="search">
+      <header class="header">
+        <img src="./images/logo.svg" alt="mesto logo" class="header__logo">
+        <nav class="header__menu">
+          <ul clsss="header__list">
+            <li>
+              <a href="" class="header__list_elem">Главная</a>
+            </li>
+            <li>
+              <a href="" class="header__list_elem">О проекте</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="search__container">
+        <h1 class="title">Что в мире творится?</h1>
+        <h3 class="subtitled">Введите в поиске любую тему и узнайте, насколько популярной она была в носотях за прошедшую неделю.</h3>
+        <form class="search__form">
+          <input type="text" placeholder="Введите тему новости" class="search__input">
+          <button type="submit" class="search__button" disabled>Искать</button>
+        </form>
+      </div>
+    </div>
   </div>
   <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
