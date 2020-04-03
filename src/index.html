@@ -8,14 +8,14 @@
   <meta name="author" lang="ru" content="Степанова Татьяна">
   <title>Что творится в мире?</title>
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
-  <link rel="shortcut icon" href="%=require(./images/Favicon A.svg).default%" type="image/svg">
+  <link rel="shortcut icon" href="<%=require('./images/Favicon A.svg').default%>" type="image/svg">
 </head>
 <body>
   <div class="page">
     <div class="search">
       <header class="header">
-        <img src="./images/logo.svg" alt="mesto logo" class="header__logo">
-        <nav class="header__menu">
+        <img src="<%=require('./images/logo.svg').default%>" alt="mesto logo" class="header__logo">
+        <nav class="menu">
           <ul clsss="header__list">
             <li>
               <a href="" class="header__list_elem">Главная</a>
@@ -27,14 +27,46 @@
         </nav>
       </header>
       <div class="search__container">
-        <h1 class="title">Что в мире творится?</h1>
-        <h3 class="subtitled">Введите в поиске любую тему и узнайте, насколько популярной она была в носотях за прошедшую неделю.</h3>
+        <h1 class="search__title">Что в мире творится?</h1>
+        <h3 class="search__subtitled">Введите в поиске любую тему и узнайте, насколько популярной она была в носотях за прошедшую неделю.</h3>
         <form class="search__form">
           <input type="text" placeholder="Введите тему новости" class="search__input">
           <button type="submit" class="search__button" disabled>Искать</button>
         </form>
       </div>
     </div>
+    <div class="author">
+      <div class="author__avatar"></div>
+      <div class="author__info">
+        <h2 class="author__title">Об авторе</h2>
+        <p class="autor__about">Это блок с описаением автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владете.
+          Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+      </div>
+    </div>
+    <footer class="footer">
+      <nav class="menu">
+        <ul clsss="footer__list">
+          <li>
+            <a href="" class="footer__list_elem" target="_blank">Главная</a>
+          </li>
+          <li>
+            <a href="" class="footer__list_elem" target="_blank">О проекте</a>
+          </li>
+          <li>
+            <a href="" class="footer__list_elem" target="_blank">Яндекс.Практикум</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__icons">
+        <a href="https://github.com/obonyasha" target="_blank" class="footer__social-icons">
+          <img src="<%=require('./images/GITHUB.svg').default%>" alt="GITHUB">
+        </a>
+        <a href="https://vk.com/obonyasha" target="_blank">
+          <img src="<%=require('./images/vk_white.svg').default%>" alt="ВКонтакте" class="footer__social-icons">
+        </a>
+      </a>
+      </div>
+    </footer>
   </div>
   <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
