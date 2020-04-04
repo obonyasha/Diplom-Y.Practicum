@@ -11,20 +11,18 @@
   <link rel="shortcut icon" href="<%=require('./images/Favicon A.svg').default%>" type="image/svg">
 </head>
 <body>
-  <div class="page">
+  <div class="main">
     <div class="search">
       <header class="header">
-        <img src="<%=require('./images/logo.svg').default%>" alt="mesto logo" class="header__logo">
-        <nav class="menu">
-          <ul clsss="header__list">
+        <img src="<%=require('./images/logo.svg').default%>" alt="mesto logo" class="logo logo__header">
+          <ul clsss="header__menu">
             <li>
-              <a href="" class="header__list_elem">Главная</a>
+              <a href="" class="header__list-item">Главная</a>
             </li>
             <li>
-              <a href="" class="header__list_elem">О проекте</a>
+              <a href="" class="header__list-item">О проекте</a>
             </li>
           </ul>
-        </nav>
       </header>
       <div class="search__container">
         <h1 class="search__title">Что в мире творится?</h1>
@@ -44,16 +42,19 @@
       </div>
     </div>
     <footer class="footer">
+      <div class="logo logo__footer">
+        <p class="footer__copyright">	&#169; 2019  Supersite</p>
+      </div>
       <nav class="menu">
         <ul clsss="footer__list">
           <li>
-            <a href="" class="footer__list_elem" target="_blank">Главная</a>
+            <a href="" class="footer__list-item" target="_blank">Главная</a>
           </li>
           <li>
-            <a href="" class="footer__list_elem" target="_blank">О проекте</a>
+            <a href="" class="footer__list-item" target="_blank">О проекте</a>
           </li>
           <li>
-            <a href="" class="footer__list_elem" target="_blank">Яндекс.Практикум</a>
+            <a href="" class="footer__list-item" target="_blank">Яндекс.Практикум</a>
           </li>
         </ul>
       </nav>

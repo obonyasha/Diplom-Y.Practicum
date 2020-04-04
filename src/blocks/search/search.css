@@ -1,0 +1,10 @@
+@import url(./header/header.css);
+
+
+.search{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('../../images/seach-bg.jpg');
+}

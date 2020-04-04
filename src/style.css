@@ -1,6 +1,6 @@
 @import url(./vendor/normalize.css);
 @import url(./vendor/fonts.css);
-
-body {
-    background-color: #84BC8A;
-}
+@import url(./blocks/main/main.css);
+@import url(./blocks/search/search.css);
+@import url(./blocks/author/author.css);
+@import url(./blocks/footer/footer.css);
