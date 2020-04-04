@@ -1,0 +1,13 @@
+.header__list-link {
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #B6BCBF;
+}
+
+.header__list-link:hover{
+  color: #FFF;
+}
