@@ -1,0 +1,23 @@
+.header__list-item {
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #B6BCBF;
+  margin-right: 34px;
+  /*display:inline-block;
+  border-bottom: 1px #fff solid;*/
+}
+
+.header__list-item:active{
+  display:inline-block;
+  border-bottom: 3px #fff solid;
+  line-height: 75px;
+  color: #fff;
+}
+
+.header__list-item:last-of-type{
+  margin-right: 0;
+}
