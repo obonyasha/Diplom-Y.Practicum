@@ -1,0 +1,11 @@
+@import url(../__title/author__title.css);
+@import url(../__about/author__about.css);
+
+.author__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  width: 600px;
+  margin-left: 56px;
+}

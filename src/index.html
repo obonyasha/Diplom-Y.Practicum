@@ -16,10 +16,10 @@
       <header class="header">
         <img src="<%=require('./images/logo.svg').default%>" alt="mesto logo" class="logo logo__header">
           <ul class="menu menu__header">
-            <li class="header__list-item">
+            <li class="list-item">
               <a href="./index.html" class="header__list-link header__list-link_active">Главная</a>
             </li>
-            <li class="header__list-item">
+            <li class="list-item">
               <a href="" class="header__list-link">О проекте</a>
             </li>
           </ul>
@@ -33,31 +33,35 @@
         </form>
       </div>
     </div>
+    <div class="search-resul-empty">
+      <img src="<%=require('./images/not-found.svg').default%>" alt="not found" class="search-resul-empty__image">
+      <h2 class="search-resul-empty__title">Ничего не найдено</h2>
+      <h3 class="search-resul-empty__subtitled">К сожалению по вашему запросу ничего не найдено.</h3>
+    </div>
+    <div class="preloader">
+      <i class="circle-preloader"></i>
+    </div>
     <div class="author">
       <div class="author__avatar"></div>
       <div class="author__info">
         <h2 class="author__title">Об авторе</h2>
-        <p class="autor__about">Это блок с описаением автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владете.
+        <p class="author__about">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владете.<br>
           Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
       </div>
     </div>
     <footer class="footer">
-      <div class="logo logo__footer">
-        <p class="footer__copyright">	&#169; 2019  Supersite</p>
-      </div>
-      <nav class="menu">
-        <ul clsss="footer__list">
-          <li>
-            <a href="" class="footer__list-item" target="_blank">Главная</a>
+        <p class="logo logo__footer footer__copyright">	&#169; 2020  Tatiana Stepanova</p>
+        <ul class="menu">
+          <li class="list-item">
+            <a href="" class="footer__list-link" target="_blank">Главная</a>
           </li>
-          <li>
-            <a href="" class="footer__list-item" target="_blank">О проекте</a>
+          <li class="list-item">
+            <a href="" class="footer__list-link" target="_blank">О проекте</a>
           </li>
-          <li>
-            <a href="" class="footer__list-item" target="_blank">Яндекс.Практикум</a>
+          <li class="list-item">
+            <a href="https://praktikum.yandex.ru/" class="footer__list-link" target="_blank">Яндекс.Практикум</a>
           </li>
         </ul>
-      </nav>
       <div class="footer__icons">
         <a href="https://github.com/obonyasha" target="_blank" class="footer__social-icons">
           <img src="<%=require('./images/GITHUB.svg').default%>" alt="GITHUB">
@@ -65,7 +69,6 @@
         <a href="https://vk.com/obonyasha" target="_blank">
           <img src="<%=require('./images/vk_white.svg').default%>" alt="ВКонтакте" class="footer__social-icons">
         </a>
-      </a>
       </div>
     </footer>
   </div>

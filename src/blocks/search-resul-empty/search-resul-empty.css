@@ -1,0 +1,14 @@
+@import url(./__image/search-resul-empty__image.css);
+@import url(./__title/search-resul-empty__title.css);
+@import url(./__subtitled/search-resul-empty__subtitled.css);
+
+.search-resul-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 374px;
+  background: #F5F6F7;
+  display: none;
+}

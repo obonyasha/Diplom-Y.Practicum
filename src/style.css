@@ -4,3 +4,5 @@
 @import url(./blocks/search/search.css);
 @import url(./blocks/author/author.css);
 @import url(./blocks/footer/footer.css);
+@import url(./blocks/preloader/preloader.css);
+@import url(./blocks/search-resul-empty/search-resul-empty.css);

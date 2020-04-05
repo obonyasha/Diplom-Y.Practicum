@@ -7,7 +7,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 86%;
   height: 80px;
   box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+  padding-right: 101px;
+  padding-left: 104px;
 }
