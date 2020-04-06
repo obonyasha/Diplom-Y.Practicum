@@ -1,7 +1,10 @@
 @import url(./circle-preloader/circle-preloader.css);
+@import url(./subtitled_preloader/subtitled_preloader.css);
 @import url(./open/open.css);
 
 .preloader {
+  display: flex;
+  flex-direction: column;
   position: relative;
   width: 100%;
   height: 282px;

@@ -1,6 +1,6 @@
 @import url(./__image/search-resul-empty__image.css);
-@import url(./__title/search-resul-empty__title.css);
-@import url(./__subtitled/search-resul-empty__subtitled.css);
+@import url(./subtitled_search-resul-empty/subtitled_search-resul-empty.css);
+@import url(./title_search-resul-empty/title_search-resul-empty.css);
 
 .search-resul-empty {
   display: flex;

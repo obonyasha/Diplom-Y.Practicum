@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,58 +11,80 @@
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
   <link rel="shortcut icon" href="<%=require('./images/Favicon A.svg').default%>" type="image/svg">
 </head>
+
 <body>
   <div class="main">
     <div class="search">
       <header class="header">
         <img src="<%=require('./images/logo.svg').default%>" alt="mesto logo" class="logo logo__header">
-          <ul class="menu menu__header">
-            <li class="list-item">
-              <a href="./index.html" class="header__list-link header__list-link_active">Главная</a>
-            </li>
-            <li class="list-item">
-              <a href="" class="header__list-link">О проекте</a>
-            </li>
-          </ul>
+        <ul class="menu menu__header">
+          <li class="list-item">
+            <a href="./index.html" class="header__list-link header__list-link_active">Главная</a>
+          </li>
+          <li class="list-item">
+            <a href="" class="header__list-link">О проекте</a>
+          </li>
+        </ul>
       </header>
       <div class="search__container">
         <h1 class="search__title">Что в мире творится?</h1>
-        <h3 class="search__subtitled">Введите в поиске любую тему и узнайте, насколько популярной она была в носотях за прошедшую неделю.</h3>
+        <h3 class="search__subtitled">Введите в поиске любую тему и узнайте, насколько популярной она была в носотях за
+          прошедшую неделю.</h3>
         <form class="search__form">
           <input type="text" placeholder="Введите тему новости" class="search__input">
           <button type="submit" class="search__button" disabled>Искать</button>
         </form>
       </div>
     </div>
+    <div class="searching-results">
+      <div class="searching-results__header">
+        <h2 class="title">Результаты поиска</h2>
+        <a href="">Посмотреть аналитику &gt;</a>
+      </div>
+      <div class="searching-results__container">
+        <div class="searching-results__card">
+          <div class="searching-results__image">
+          </div>
+          <time datetime="" class="searching-results__publication-date">2 августа, 2019</time>
+          <h2 class="title title_card">Национальное достояние – парки</h2>
+          <h3 class="subtitled subtitled_card">В 2016 году Америка отмечала важный юбилей:
+            сто лет назад здесь начала складываться система национальных парков – охраняемых территорий,
+            где и сегодня каждый может приобщиться к природе.</h3>
+          <p class="searching-results__source-name">Лента.ру</p>
+        </div>
+      </div>
+    </div>
     <div class="search-resul-empty">
       <img src="<%=require('./images/not-found.svg').default%>" alt="not found" class="search-resul-empty__image">
-      <h2 class="search-resul-empty__title">Ничего не найдено</h2>
-      <h3 class="search-resul-empty__subtitled">К сожалению по вашему запросу ничего не найдено.</h3>
+      <h2 class="title title_search-resul-empty">Ничего не найдено</h2>
+      <h3 class="subtitled subtitled_search-resul-empty">К сожалению по вашему запросу ничего не найдено.</h3>
     </div>
-    <div class="preloader">
-      <i class="circle-preloader"></i>
+    <div class="preloader open">
+      <div class="subtitled subtitled_preloader"><i class="circle-preloader"></i></div>
     </div>
     <div class="author">
       <div class="author__avatar"></div>
       <div class="author__info">
-        <h2 class="author__title">Об авторе</h2>
-        <p class="author__about">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владете.<br>
-          Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+        <h2 class="title title_author">Об авторе</h2>
+        <p class="subtitled subtitled_author">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут,
+          чем вы занимаетесь, какими технологиями разработки владете.<br>
+          Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь
+          потенциальным заказчикам.</p>
       </div>
     </div>
     <footer class="footer">
-        <p class="logo logo__footer footer__copyright">	&#169; 2020  Tatiana Stepanova</p>
-        <ul class="menu">
-          <li class="list-item">
-            <a href="" class="footer__list-link" target="_blank">Главная</a>
-          </li>
-          <li class="list-item">
-            <a href="" class="footer__list-link" target="_blank">О проекте</a>
-          </li>
-          <li class="list-item">
-            <a href="https://praktikum.yandex.ru/" class="footer__list-link" target="_blank">Яндекс.Практикум</a>
-          </li>
-        </ul>
+      <p class="logo logo__footer footer__copyright"> &#169; 2020 Tatiana Stepanova</p>
+      <ul class="menu">
+        <li class="list-item">
+          <a href="" class="footer__list-link" target="_blank">Главная</a>
+        </li>
+        <li class="list-item">
+          <a href="" class="footer__list-link" target="_blank">О проекте</a>
+        </li>
+        <li class="list-item">
+          <a href="https://praktikum.yandex.ru/" class="footer__list-link" target="_blank">Яндекс.Практикум</a>
+        </li>
+      </ul>
       <div class="footer__icons">
         <a href="https://github.com/obonyasha" target="_blank" class="footer__social-icons">
           <img src="<%=require('./images/GITHUB.svg').default%>" alt="GITHUB">
