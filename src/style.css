@@ -6,5 +6,10 @@
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/preloader/preloader.css);
 @import url(./blocks/search-resul-empty/search-resul-empty.css);
-@import url(./blocks/title/title.css);
-@import url(./blocks/subtitled/subtitled.css);
+@import url(./blocks/fonts/title-m/title-m.css);
+@import url(./blocks/fonts/title-s/title-s.css);
+@import url(./blocks/fonts/subtitled/subtitled.css);
+@import url(./blocks/fonts/roboto-normal-500/roboto-normal-500.css);
+@import url(./blocks/block-header/block-header.css);
+@import url(./blocks/open/open.css);
+@import url(./blocks/searching-results/searching-results.css);

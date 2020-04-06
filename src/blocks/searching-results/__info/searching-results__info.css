@@ -1,0 +1,11 @@
+@import url(../__publication-date/searching-results__publication-date.css);
+
+.searching-results__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 88%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 24px;
+}

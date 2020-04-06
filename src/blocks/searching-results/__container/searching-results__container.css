@@ -1,0 +1,10 @@
+@import url(../__card/searching-results__card.css);
+
+.searching-results__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px 16px;
+  justify-content: center;
+  width: 86%;
+  margin-top: 64px;
+}
