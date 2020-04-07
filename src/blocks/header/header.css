@@ -1,6 +1,4 @@
-@import url(../logo/logo.css);
-@import url(../menu__header/menu__header.css);
-@import url(../menu/menu.css);
+@import url(./menu__header/menu__header.css);
 
 .header{
   display: flex;
