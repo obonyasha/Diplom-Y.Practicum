@@ -8,17 +8,17 @@
   <meta name="description" content="Сервис для анализа происходящих в мире событий">
   <meta name="author" lang="ru" content="Степанова Татьяна">
   <title>О проекте</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="shortcut icon" href="../images/Favicon A.svg">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+  <link rel="shortcut icon" href="<%=require('../images/Favicon A.svg').default%>">
 </head>
 
 <body>
-  <div class="about">
+  <div class="main">
     <header class="header">
-      <img src="../images/NewsAnalyzer_black.svg" alt="mesto logo" class="logo">
+      <img src="<%=require('../images/NewsAnalyzer_black.svg').default%>" alt="mesto logo" class="logo">
       <ul class="menu menu__header">
         <li class="list-item">
-          <a href="../index.html" class="header__list-link header__list-link_black">Главная</a>
+          <a href="../index.html" class="header__list-link">Главная</a>
         </li>
         <li class="list-item">
           <a href="./index.html" class="header__list-link header__list-link_active header__list-link_black">О
@@ -57,19 +57,19 @@
       <h2 class="title-m">Используемые технологии</h2>
       <div class="technology__container-icon">
         <p class="technology__name">HTML</p>
-        <img src="" alt="HTML" class="technology__icon">
+        <img src="<%=require('../images/html.svg').default%>" alt="HTML" class="technology__icon">
       </div>
       <div class="technology__container-icon">
         <p class="technology__name">CSS</p>
-        <img src="" alt="CSS" class="technology__icon">
+        <img src="<%=require('../images/css.svg').default%>" alt="CSS" class="technology__icon">
       </div>
       <div class="technology__container-icon">
         <p class="technology__name">Java Script</p>
-        <img src="" alt="Java Script" class="technology__icon">
+        <img src="<%=require('../images/js.svg').default%>" alt="Java Script" class="technology__icon">
       </div>
       <div class="technology__container-icon">
         <p class="technology__name">Webpack</p>
-        <img src="" alt="Webpack" class="technology__icon">
+        <img src="<%=require('../images/webpack.svg').default%>" alt="Webpack" class="technology__icon">
       </div>
     </div>
     <div class="author">
@@ -89,11 +89,35 @@
       </div>
       <div class="commit-history__container">
         <div class="commit-history__card">
+          <time datetime="" class="commit-history__publication-date">2 августа, 2019</time>
 
         </div>
+        <div class="commit-history__card">...</div>
+        <div class="ccommit-history__card">...</div>
       </div>
     </div>
-
+    <footer class="footer">
+      <p class="logo logo__footer footer__copyright"> &#169; 2020 Tatiana Stepanova</p>
+      <ul class="menu">
+        <li class="list-item">
+          <a href="" class="footer__list-link" target="_blank">Главная</a>
+        </li>
+        <li class="list-item">
+          <a href="" class="footer__list-link" target="_blank">О проекте</a>
+        </li>
+        <li class="list-item">
+          <a href="https://praktikum.yandex.ru/" class="footer__list-link" target="_blank">Яндекс.Практикум</a>
+        </li>
+      </ul>
+      <div class="footer__icons">
+        <a href="https://github.com/obonyasha" target="_blank" class="footer__social-icons">
+          <img src="<%=require('../images/GITHUB.svg').default%>" alt="GITHUB">
+        </a>
+        <a href="https://vk.com/obonyasha" target="_blank">
+          <img src="<%=require('../images/vk_white.svg').default%>" alt="ВКонтакте" class="footer__social-icons">
+        </a>
+      </div>
+    </footer>
   </div>
 </body>
 
