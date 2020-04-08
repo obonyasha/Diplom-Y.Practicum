@@ -1,7 +1,9 @@
+@import url(../__date/commit-history__date.css);
+
 .commit-history__card {
-  display: flex;
-  flex-direction: column;
   width: 400px;
+  min-height: 288px;
   background: #fff;
   border-radius: 16px;
+  margin-left: 16px;
 }

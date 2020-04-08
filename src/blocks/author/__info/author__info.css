@@ -1,5 +1,6 @@
 @import url(../subtitled_author/subtitled_author.css);
 @import url(../title_author/title_author.css);
+@import url(../__info_commit-history/author__info_commit-history.css);
 
 .author__info {
   display: flex;
