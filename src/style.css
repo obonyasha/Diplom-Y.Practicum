@@ -8,7 +8,8 @@
 @import url(./blocks/search-resul-empty/search-resul-empty.css);
 @import url(./blocks/fonts/title-m/title-m.css);
 @import url(./blocks/fonts/title-s/title-s.css);
-@import url(./blocks/fonts/subtitled/subtitled.css);
+@import url(./blocks/fonts/subtitled-m/subtitled-m.css);
+@import url(./blocks/fonts/subtitled-s/subtitled-s.css);
 @import url(./blocks/fonts/roboto-normal-500/roboto-normal-500.css);
 @import url(./blocks/block-header/block-header.css);
 @import url(./blocks/open/open.css);

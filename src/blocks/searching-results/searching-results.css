@@ -1,5 +1,7 @@
 @import url(./__container/searching-results__container.css);
 @import url(./__btn-show-more/searching-results__btn-show-more.css);
+@import url(./subtitled_card/subtitled_card.css);
+@import url(./title_card/title_card.css);
 
 .searching-results {
   display: flex;

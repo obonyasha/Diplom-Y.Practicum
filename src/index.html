@@ -17,10 +17,13 @@
   <div class="main">
     <div class="search">
       <header class="header">
-        <img src="<%=require('./images/NewsAnalyzer_white.svg').default%>" alt="mesto logo" class="logo logo__header">
+        <a href="./index.html">
+          <img src="<%=require('./images/NewsAnalyzer_white.svg').default%>" alt="mesto logo" class="logo logo__header">
+        </a>
         <ul class="menu menu__header">
           <li class="list-item">
-            <a href="./index.html" class="header__list-link header__list-link_active header__list-link_white">Главная</a>
+            <a href="./index.html"
+              class="header__list-link header__list-link_active header__list-link_white">Главная</a>
           </li>
           <li class="list-item">
             <a href="./about.html" class="header__list-link">О проекте</a>
@@ -49,7 +52,7 @@
           <div class="searching-results__info">
             <time datetime="" class="searching-results__publication-date">2 августа, 2019</time>
             <h2 class="title-s title_card">Национальное достояние – парки</h2>
-            <h3 class="subtitled subtitled_card">В 2016 году Америка отмечала важный юбилей:
+            <h3 class="subtitled-s subtitled_card">В 2016 году Америка отмечала важный юбилей:
               сто лет назад здесь начала складываться система национальных парков – охраняемых территорий,
               где и сегодня каждый может приобщиться к природе.</h3>
           </div>
@@ -61,7 +64,7 @@
           <div class="searching-results__info">
             <time datetime="" class="searching-results__publication-date">2 августа, 2019</time>
             <h2 class="title-s title_card">Лесные огоньки: история одной фотографии</h2>
-            <h3 class="subtitled subtitled_card">Фотограф отвлеклась от освещения суровой политической реальности
+            <h3 class="subtitled-s subtitled_card">Фотограф отвлеклась от освещения суровой политической реальности
               Мексики,
               чтобы запечатлеть ускользающую красоту одного
               из местных чудес природы.</h3>
@@ -74,7 +77,7 @@
           <div class="searching-results__info">
             <time datetime="" class="searching-results__publication-date">2 августа, 2019</time>
             <h2 class="title-s title_card">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h2>
-            <h3 class="subtitled subtitled_card">Знаменитый фотограф снимает первозданные леса России,
+            <h3 class="subtitled-s subtitled_card">Знаменитый фотограф снимает первозданные леса России,
               чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...
             </h3>
           </div>
@@ -86,7 +89,7 @@
           <div class="searching-results__info">
             <time datetime="" class="searching-results__publication-date">2 августа, 2019</time>
             <h2 class="title-s title_card">Национальное достояние – парки</h2>
-            <h3 class="subtitled subtitled_card">В 2016 году Америка отмечала важный юбилей:
+            <h3 class="subtitled-s subtitled_card">В 2016 году Америка отмечала важный юбилей:
               сто лет назад здесь начала складываться система национальных парков – охраняемых территорий,
               где и сегодня каждый может приобщиться к природе.</h3>
           </div>
@@ -98,17 +101,17 @@
     <div class="search-resul-empty">
       <img src="<%=require('./images/not-found.svg').default%>" alt="not found" class="search-resul-empty__image">
       <h2 class="title-s title_search-resul-empty">Ничего не найдено</h2>
-      <h3 class="subtitled subtitled_search-resul-empty">К сожалению по вашему запросу ничего не найдено.</h3>
+      <h3 class="subtitled-s subtitled_search-resul-empty">К сожалению по вашему запросу ничего не найдено.</h3>
     </div>
     <div class="preloader">
       <i class="circle-preloader"></i>
-      <h3 class="subtitled subtitled_preloader">Идет поиск новостей...</h3>
+      <h3 class="subtitled-m subtitled_preloader">Идет поиск новостей...</h3>
     </div>
     <div class="author">
       <div class="author__avatar"></div>
       <div class="author__info">
         <h2 class="title-m title_author">Об авторе</h2>
-        <p class="subtitled subtitled_author">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут,
+        <p class="subtitled-m subtitled_author">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут,
           чем вы занимаетесь, какими технологиями разработки владете.<br>
           Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь
           потенциальным заказчикам.</p>
