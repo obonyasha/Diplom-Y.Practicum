@@ -1,10 +1,6 @@
-@import url(../technology/technology__container-icon/technology__container-icon.css);
-@import url(../technology/title-m_technology/title-m_technology.css);
+@import url(../technology/__container/technology__container.css);
 
 .technology {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
   min-height: 334px;
   margin-top: 94px;

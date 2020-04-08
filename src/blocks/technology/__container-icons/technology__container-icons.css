@@ -1,0 +1,7 @@
+@import url(../__container-icon/technology__container-icon.css);
+
+.technology__container-icons {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}

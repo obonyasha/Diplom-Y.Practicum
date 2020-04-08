@@ -1,0 +1,7 @@
+.commit-history__card {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  background: #fff;
+  border-radius: 16px;
+}

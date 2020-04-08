@@ -1,5 +1,6 @@
 @import url(./__list-link/header__list-link.css);
 @import url(./_active/header__list-link_active.css);
+@import url(./header_about/header_about.css);
 
 .header{
   display: flex;
@@ -7,7 +8,7 @@
   justify-content: space-between;
   width: 86%;
   height: 80px;
-  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0px -1px 0px #D1D2D6;
+  padding-left: 100px;
   padding-right: 101px;
-  padding-left: 104px;
 }

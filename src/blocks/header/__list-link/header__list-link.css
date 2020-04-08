@@ -1,6 +1,5 @@
 @import url(../__list-link_black/header__list-link_black.css);
 @import url(../__list-link_white/header__list-link_white.css);
-@import url(../__list-link_active_black/header__list-link_active_black.css);
 
 .header__list-link {
   text-decoration: none;

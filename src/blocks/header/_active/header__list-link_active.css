@@ -1,3 +1,5 @@
+@import url(../__list-link_active_black/header__list-link_active_black.css);
+
 .header__list-link_active{
   display:inline-block;
   border-bottom: 3px #fff solid;
