@@ -7,7 +7,11 @@ const isDev = process.env.NODE_ENV === 'development';
 const webpack = require('webpack');
 
 module.exports = {
-  entry: { main: './src/index.js' },
+  entry: {
+   // flickity: './node_modules/flickity/dist/flickity.pkgd.min.js',
+    main: './src/index.js',
+    about: './src/about/index.js'
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[chunkhash].js'

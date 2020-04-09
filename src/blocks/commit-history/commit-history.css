@@ -1,15 +1,16 @@
-@import url(../commit-history/__container/commit-history__container.css);
-@import url(../commit-history/author_commit-history/author_commit-history.css);
+@import url(./author_commit-history/author_commit-history.css);
 @import url(../author/__avatar_github/author__avatar_github.css);
-@import url(../commit-history/subtitled_commit-history/subtitled_commit-history.css);
-@import url(../commit-history/subtitled-s_commit-history/subtitled-s_commit-history.css);
-@import url(../commit-history/block-header_commit-history/block-header_commit-history.css);
-@import url(../commit-history/__carousel/commit-history__carousel.css);
+@import url(./subtitled_commit-history/subtitled_commit-history.css);
+@import url(./subtitled-s_commit-history/subtitled-s_commit-history.css);
+@import url(./__card/commit-history__card.css);
+@import url(./__container/commit-history__container.css);
+@import url(./block-header_commit-history/block-header_commit-history.css);
 
 .commit-history {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
   background: #F5F6F7;
+  padding-top: 72px;
+  padding-bottom: 80px;
 }

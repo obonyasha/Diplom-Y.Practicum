@@ -1,8 +1,10 @@
 import "./style.css";
 
-var elem = document.querySelector('.commit-history__carousel');
+
+var elem = document.querySelector('.main-carousel');
 var flkty = new Flickity( elem, {
   // options
   cellAlign: 'left',
-  contain: true
+  contain: true,
+  wrapAround: true
 });

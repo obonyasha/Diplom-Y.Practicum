@@ -8,13 +8,14 @@
   <meta name="description" content="Сервис для анализа происходящих в мире событий">
   <meta name="author" lang="ru" content="Степанова Татьяна">
   <title>О проекте</title>
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
   <link rel="shortcut icon" href="<%=require('../images/Favicon A.svg').default%>">
 </head>
 
 <body>
-  <li class="main">
-    <header class="header header_about">
+  <div class="main">
+    <header class="header">
       <a href="../index.html">
         <img src="<%=require('../images/NewsAnalyzer_black.svg').default%>" alt="mesto logo" class="logo">
       </a>
@@ -96,98 +97,116 @@
         <h2 class="title-m">История коммитов из GitHub</h2>
         <a href="" class="block-header__link roboto-normal-500">Открыть в Github &gt;</a>
       </div>
-      <div class="commit-history__container flickity-enabled" data-flickity='{ "wrapAround": true }' tabindex="0">
-        <div class="commit-history__card">...</div>
-        <div class="commit-history__card">
-          <div class="commit-history__date">
-            <time datetime="" class="commit-history__publication-date">14 августа, 2019</time>
-            <div class="author author_commit-history">
-              <img src="<%=require('../images/anton.jpg').default%>" class="author__avatar author__avatar_github">
-              <div class="author__info author__info_commit-history">
-                <h2 class="title-s">Антон Долинин</h2>
-                <a class="subtitled-s subtitled_commit-history">anton@yandex.ru</a>
+      <div class="commit-history__container">
+        <div class="main-carousel" data-flickity='{ "wrapAround": true }'>
+          <div class="commit-history__card carousel-cell">
+            <div class="commit-history__date">
+              <time datetime="" class="commit-history__publication-date">14 августа, 2019</time>
+              <div class="author author_commit-history">
+                <img src="<%=require('../images/anton.jpg').default%>" class="author__avatar author__avatar_github">
+                <div class="author__info author__info_commit-history">
+                  <h2 class="title-s">Антон Долинин</h2>
+                  <a class="subtitled-s subtitled_commit-history">anton@yandex.ru</a>
+                </div>
               </div>
+              <p class="subtitled-s subtitled-s_commit-history">
+                Emmet (formerly Zen Coding) is a web-
+                developer’s toolkit that can greatly improve your HTML & CSS workflow.
+              </p>
             </div>
-            <p class="subtitled-s subtitled-s_commit-history">
-              Emmet (formerly Zen Coding) is a web-
-              developer’s toolkit that can greatly improve your HTML & CSS workflow.
-            </p>
+          </div>
+          <div class="commit-history__card carousel-cell">
+            <div class="commit-history__date">
+              <time datetime="" class="commit-history__publication-date">14 августа, 2019</time>
+              <div class="author author_commit-history">
+                <img src="<%=require('../images/maria.jpg').default%>" class="author__avatar author__avatar_github">
+                <div class="author__info author__info_commit-history">
+                  <h2 class="title-s">Мария Фёдорова</h2>
+                  <a class="subtitled-s subtitled_commit-history">mariiifed@yandex.ru</a>
+                </div>
+              </div>
+              <p class="subtitled-s subtitled-s_commit-history">
+                You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open   Tools >
+                Plugins > Available plugins   and find and install Emmet plugin.
+              </p>
+            </div>
+          </div>
+          <div class="commit-history__card carousel-cell">
+            <div class="commit-history__date">
+              <time datetime="" class="commit-history__publication-date">14 августа, 2019</time>
+              <div class="author author_commit-history">
+                <img src="<%=require('../images/inga.jpg').default%>" class="author__avatar author__avatar_github">
+                <div class="author__info author__info_commit-history">
+                  <h2 class="title-s">Инга Иванова</h2>
+                  <a class="subtitled-s subtitled_commit-history">ingaiva@yandex.ru</a>
+                </div>
+              </div>
+              <p class="subtitled-s subtitled-s_commit-history">
+                With Emmet, you can type CSS-like expressions
+                that can be dynamically parsed, and produce
+                output depending on what you type in the abb...
+              </p>
+            </div>
+          </div>
+          <div class="commit-history__card carousel-cell">
+            <div class="commit-history__date">
+              <time datetime="" class="commit-history__publication-date">14 августа, 2019</time>
+              <div class="author author_commit-history">
+                <img src="<%=require('../images/anton.jpg').default%>" class="author__avatar author__avatar_github">
+                <div class="author__info author__info_commit-history">
+                  <h2 class="title-s">Антон Долинин</h2>
+                  <a class="subtitled-s subtitled_commit-history">anton@yandex.ru</a>
+                </div>
+              </div>
+              <p class="subtitled-s subtitled-s_commit-history">
+                Emmet (formerly Zen Coding) is a web-
+                developer’s toolkit that can greatly improve your HTML & CSS workflow.
+              </p>
+            </div>
+          </div>
+          <div class="commit-history__card carousel-cell">
+            <div class="commit-history__date">
+              <time datetime="" class="commit-history__publication-date">14 августа, 2019</time>
+              <div class="author author_commit-history">
+                <img src="<%=require('../images/anton.jpg').default%>" class="author__avatar author__avatar_github">
+                <div class="author__info author__info_commit-history">
+                  <h2 class="title-s">Антон Долинин</h2>
+                  <a class="subtitled-s subtitled_commit-history">anton@yandex.ru</a>
+                </div>
+              </div>
+              <p class="subtitled-s subtitled-s_commit-history">
+                Emmet (formerly Zen Coding) is a web-
+                developer’s toolkit that can greatly improve your HTML & CSS workflow.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="commit-history__card">...</div>
-        <div class="commit-history__card">...</div>
-      </div>
-  <li class="commit-history__page-dots">
-  <li class="commit-history__dot" aria-label="Page dot 1"></li>
-  <li class="commit-history__dot" aria-label="Page dot 2"></li>
-  <li class="commit-history__dot" aria-label="Page dot 3"></li>
-  </li>
-  </div>
-  <div class="commit-history__carousel commit-history__enabled is-draggable" data-flickity="{ &quot;wrapAround&quot;: true }"
-    tabindex="0">
-    <div class="commit-history__viewport">
-      <div class="commit-history__slider" style="left: 0px; transform: translateX(17%);">
-        <div class="commit-history__card"></div>
-        <div class="commit-history__card">
-          <div class="commit-history__date">
-            <time datetime="" class="commit-history__publication-date">14 августа, 2019</time>
-            <div class="author author_commit-history">
-              <img src="<%=require('../images/anton.jpg').default%>" class="author__avatar author__avatar_github">
-              <div class="author__info author__info_commit-history">
-                <h2 class="title-s">Антон Долинин</h2>
-                <a class="subtitled-s subtitled_commit-history">anton@yandex.ru</a>
-              </div>
-            </div>
-            <p class="subtitled-s subtitled-s_commit-history">
-              Emmet (formerly Zen Coding) is a web-
-              developer’s toolkit that can greatly improve your HTML & CSS workflow.
-            </p>
-          </div>
-        </div>
-        <div class="commit-history__card"></div>
-        <div class="commit-history__card"></div>
-        <div class="commit-history__card"></div>
       </div>
     </div>
-    <button class="commit-history__button commit-history__prev-next-button previous" type="button" aria-label="Previous">
-      <svg class="commit-history__button-icon" viewBox="0 0 100 100">
-        <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow"></path>
-      </svg>
-    </button>
-    <button class="commit-history__button commit-history__prev-next-button next" type="button" aria-label="Next">
-      <svg lass="commit-history__button-icon" viewBox="0 0 100 100">
-        <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow" transform="translate(100, 100) rotate(180) "></path>
-      </svg>
-    </button>
-    <ol class="commit-history__page-dots">
-      <li class="commit-history__dot is-selected" aria-label="Page dot 1" aria-current="step"></li>
-      <li class="commit-history__dot" aria-label="Page dot 2"></li>
-      <li class="commit-history__dot" aria-label="Page dot 3"></li>
-    </ol>
+    <footer class="footer">
+      <p class="logo logo__footer footer__copyright"> &#169; 2020 Tatiana Stepanova</p>
+      <ul class="menu">
+        <li class="list-item">
+          <a href="../index.html" class="footer__list-link">Главная</a>
+        </li>
+        <li class="list-item">
+          <a href="index.html" class="footer__list-link">О проекте</a>
+        </li>
+        <li class="list-item">
+          <a href="https://praktikum.yandex.ru/" class="footer__list-link" target="_blank">Яндекс.Практикум</a>
+        </li>
+      </ul>
+      <div class="footer__icons">
+        <a href="https://github.com/obonyasha" target="_blank" class="footer__social-icons">
+          <img src="<%=require('../images/GITHUB.svg').default%>" alt="GITHUB">
+        </a>
+        <a href="https://vk.com/obonyasha" target="_blank">
+          <img src="<%=require('../images/vk_white.svg').default%>" alt="ВКонтакте" class="footer__social-icons">
+        </a>
+      </div>
+    </footer>
   </div>
-  <footer class="footer">
-    <p class="logo logo__footer footer__copyright"> &#169; 2020 Tatiana Stepanova</p>
-    <ul class="menu">
-      <li class="list-item">
-        <a href="" class="footer__list-link" target="_blank">Главная</a>
-      </li>
-      <li class="list-item">
-        <a href="" class="footer__list-link" target="_blank">О проекте</a>
-      </li>
-      <li class="list-item">
-        <a href="https://praktikum.yandex.ru/" class="footer__list-link" target="_blank">Яндекс.Практикум</a>
-      </li>
-    </ul>
-    <div class="footer__icons">
-      <a href="https://github.com/obonyasha" target="_blank" class="footer__social-icons">
-        <img src="<%=require('../images/GITHUB.svg').default%>" alt="GITHUB">
-      </a>
-      <a href="https://vk.com/obonyasha" target="_blank">
-        <img src="<%=require('../images/vk_white.svg').default%>" alt="ВКонтакте" class="footer__social-icons">
-      </a>
-    </div>
-  </footer>
-  </div>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
 </html>

@@ -7,3 +7,7 @@
   color: #1A1B22;
   margin-top: 64px;
 }
+
+.searching-results__btn-show-more:hover {
+  opacity: 0.9;
+}

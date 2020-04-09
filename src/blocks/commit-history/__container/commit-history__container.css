@@ -1,8 +1,3 @@
-@import url(../__card/commit-history__card.css);
-
 .commit-history__container {
-  display: flex;
   margin-top: 64px;
-  /*height: 288px;
-  touch-action: pan-y;*/
 }
