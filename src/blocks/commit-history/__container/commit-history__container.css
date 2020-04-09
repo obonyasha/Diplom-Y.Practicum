@@ -3,4 +3,6 @@
 .commit-history__container {
   display: flex;
   margin-top: 64px;
+  /*height: 288px;
+  touch-action: pan-y;*/
 }

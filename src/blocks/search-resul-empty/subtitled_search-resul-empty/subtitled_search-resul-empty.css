@@ -1,9 +1,6 @@
 .subtitled_search-resul-empty{
   width: 356px;
-  font-size: 18px;
-  line-height: 24px;
   text-align: center;
-  color: #B6BCBF;
-  margin: 0;
-  margin-top: 16px;
+  color: #B6BCBF !important;
+  margin-top: 16px !important;
 }

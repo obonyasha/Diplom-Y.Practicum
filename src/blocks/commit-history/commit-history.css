@@ -3,6 +3,8 @@
 @import url(../author/__avatar_github/author__avatar_github.css);
 @import url(../commit-history/subtitled_commit-history/subtitled_commit-history.css);
 @import url(../commit-history/subtitled-s_commit-history/subtitled-s_commit-history.css);
+@import url(../commit-history/block-header_commit-history/block-header_commit-history.css);
+@import url(../commit-history/__carousel/commit-history__carousel.css);
 
 .commit-history {
   display: flex;
