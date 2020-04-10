@@ -1,0 +1,7 @@
+@import url(./__columns/barchart__columns.css);
+
+.barchart {
+  width: 86%;
+  margin: auto;
+  margin-top: 48px;
+}

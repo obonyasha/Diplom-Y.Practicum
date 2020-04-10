@@ -1,0 +1,9 @@
+@import url(../__y-axis/barchart__y-axis.css);
+@import url(../__name-axis/barchart__name-axis.css);
+@import url(../__data/barchart__data.css);
+@import url(../__day/barchart__day.css);
+
+.barchart__columns {
+  display: flex;
+  justify-content: flex-start;
+}

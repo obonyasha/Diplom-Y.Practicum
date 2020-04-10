@@ -1,0 +1,6 @@
+.statistics__bar-chart {
+  display: flex;
+  flex-direction: column;
+  width: 86%;
+  margin: auto;
+}

@@ -1,0 +1,13 @@
+@import url(./subtitled-m_analytics-header/subtitled-m_analytics-header.css);
+@import url(./subtitled-m_bold/subtitled-m_bold.css);
+@import url(./subtitled-m_news/subtitled-m_news.css);
+@import url(./title-m_analytics-header/title-m_analytics-header.css);
+
+.analytics-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 86%;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}

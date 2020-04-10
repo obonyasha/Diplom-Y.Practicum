@@ -1,0 +1,14 @@
+@import url(../__quantity_mon/barchart__quantity_mon.css);
+@import url(../__quantity_tues/barchart__quantity_tues.css);
+@import url(../__quantity_wed/barchart__quantity_wed.css);
+@import url(../__quantity_tues/barchart__quantity_tues.css);
+@import url(../__quantity_fri/barchart__quantity_fri.css);
+@import url(../__quantity_sat/barchart__quantity_sat.css);
+@import url(../__quantity_sut/barchart__quantity_sut.css);
+
+.barchart__quantity {
+  height: 24px;
+  background-color: #2F71E5;
+  color: #fff;
+  margin-top: 56px;
+}
