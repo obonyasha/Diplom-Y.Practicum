@@ -11,3 +11,8 @@
 .searching-results__btn-show-more:hover {
   opacity: 0.9;
 }
+
+.searching-results__btn-show-more:active {
+  opacity: 0.9;
+  box-shadow: 9px -9px 4px -3px rgba(16,16,16) inset;
+}
