@@ -4,8 +4,12 @@
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 80px;
   color: #1A1B22;
   margin: 0;
   margin-top: 56px;
+}
+
+.barchart__list:first-child {
+  margin-top: 0;
+
 }

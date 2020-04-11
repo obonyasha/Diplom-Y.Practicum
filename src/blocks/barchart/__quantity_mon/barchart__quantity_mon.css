@@ -1,3 +1,5 @@
 .barchart__quantity_mon{
   width: 184px;
+  margin: 0;
+  margin-left: 6px;
 }
