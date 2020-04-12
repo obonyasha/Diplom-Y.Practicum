@@ -9,5 +9,30 @@
   flex-direction: column;
   width: 42%;
   margin: 0 auto;
-  margin-top: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media screen and (max-width: 806px) and (min-width: 769px) {
+  .search__container {
+    width: 50%;
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 352px) {
+  .search__container {
+    width: 58%;
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (max-width: 351px) {
+  .search__container {
+    width: 90%;
+    padding-top: 30px;
+    padding-bottom: 32px;
+  }
 }

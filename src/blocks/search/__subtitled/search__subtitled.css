@@ -9,3 +9,26 @@
   margin: 0;
   margin-top: 32px;
 }
+
+@media screen and (max-width: 1261px) {
+  .search__subtitled {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .search__subtitled {
+    width: 100%;
+    margin-top: 16px;
+  }
+}
+
+@media screen and (max-width: 418px) {
+  .search__subtitled {
+    width: 100%;
+    margin-top: 56px;
+    font-size : 20px;
+    line-height: 26px;
+
+  }
+}

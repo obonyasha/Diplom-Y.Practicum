@@ -19,27 +19,32 @@
   <div class="main">
     <div class="search">
       <header class="header">
-        <a class="logo-link" href="../index.html">
-          <p class="logo logo_white">NewsAnalyzer</p>
-        </a>
-        <ul class="menu">
-          <li class="list-item list-item_active">
-            <div>
-              <a href="./index.html" class="link link_active">Главная
-              </a>
-            </div>
-          </li>
-          <li class="list-item">
-            <a href="./about.html" class="link">О проекте</a>
-          </li>
-        </ul>
+        <div class="header__container">
+          <a class="logo-link" href="../index.html">
+            <p class="logo logo_white">NewsAnalyzer</p>
+          </a>
+          <ul class="menu">
+            <li class="list-item list-item_active">
+              <div>
+                <a href="./index.html" class="link link_active">Главная
+                </a>
+              </div>
+            </li>
+            <li class="list-item">
+              <a href="./about.html" class="link">О проекте</a>
+            </li>
+          </ul>
+        </div>
       </header>
       <div class="search__container">
         <h1 class="search__title">Что в мире творится?</h1>
         <h3 class="search__subtitled">Введите в поиске любую тему и узнайте, насколько популярной она была в носотях за
           прошедшую неделю.</h3>
         <form class="search__form">
-          <input type="text" placeholder="Введите тему новости" class="search__input">
+          <div class="input-container">
+            <input type="text" id="name" placeholder="Введите тему новости" class="search__input">
+            <span id="error-name" class="error-message error-message__hidden"></span>
+          </div>
           <button type="submit" class="search__button roboto-normal-500" disabled>Искать</button>
         </form>
       </div>

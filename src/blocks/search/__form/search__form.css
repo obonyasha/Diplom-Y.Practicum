@@ -5,8 +5,22 @@
   display: flex;
   justify-content: flex-start;
   width: 95%;
-  height: 64px;
-  font-family: Roboto;
-  font-style: normal;
   margin-top: 64px;
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 321px) {
+  .search__form {
+    width: 100%;
+    margin-top: 24px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .search__form {
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    margin-top: 24px;
+  }
 }

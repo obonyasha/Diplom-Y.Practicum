@@ -6,7 +6,7 @@
   border: none;
   padding: 0;
   margin: 0;
-  margin-left: -26%;
+  margin-left: -23%;
 }
 
 .search__button:hover {
@@ -16,4 +16,13 @@
 .search__button:active {
   background: #2A65CC;
   box-shadow: 7px -7px 1px -3px rgb(170,209,238) inset;
+}
+
+@media screen and (max-width: 320px) {
+  .search__button {
+    width: 100%;
+    height: 56px;
+    margin-left: 0;
+    margin-top: 16px;
+  }
 }

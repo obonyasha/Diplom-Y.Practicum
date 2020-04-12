@@ -1,5 +1,7 @@
 .search__input {
-  width: 100%;
+  width: 94%;
+  height: 64px;
+  font-family: Roboto;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
@@ -8,21 +10,21 @@
   border-radius: 100px;
   border: 1px solid #D1D2D6;
   background: #fff !important;
-  padding-left: 24px;
+  padding-left: 4%;
 }
 
-::-webkit-input-placeholder {
+.search__input::placeholder {
   color:#B6BCBF;
 }
 
-::-moz-placeholder {
-  color:#B6BCBF;
+@media screen and (max-width: 768px) and (min-width: 321px) {
+  .search__input {
+    height: 56px;
+  }
 }
 
-:-moz-placeholder {
-  color:#B6BCBF;
-}
-
-:-ms-input-placeholder {
-  color:#B6BCBF;
+@media screen and (max-width: 320px) {
+  .search__input {
+    height: 56px;
+  }
 }
