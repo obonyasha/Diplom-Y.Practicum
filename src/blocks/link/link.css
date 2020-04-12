@@ -1,0 +1,12 @@
+@import url(./link_active/link_active.css);
+@import url(./link_black/link_black.css);
+@import url(./link_active_black/link_active_black.css);
+
+.link {
+  text-decoration: none;
+  color: #B6BCBF;
+}
+
+.link:hover {
+  color: #fff;
+}
