@@ -16,16 +16,19 @@
 <body>
   <div class="main">
     <header class="header">
-      <a href="../index.html">
-        <img src="<%=require('../images/NewsAnalyzer_black.svg').default%>" alt="mesto logo" class="logo">
+      <a class="logo-link" href="../index.html">
+        <p class="logo">NewsAnalyzer</p>
       </a>
-      <ul class="menu menu__header">
+      <ul class="menu">
         <li class="list-item">
-          <a href="./index.html" class="header__list-link header__list-link_black">Главная</a>
+          <a href="./index.html" class="link link_black">Главная</a>
         </li>
-        <li class="list-item">
-          <a href="./about.html" class="header__list-link header__list-link_active header__list-link_active_black">О
-            проекте</a>
+        <li class="list-item list-item_active_black">
+          <div>
+            <a href="./about.html" class="link link_active_black">О
+              проекте
+            </a>
+          </div>
         </li>
       </ul>
     </header>
@@ -95,7 +98,8 @@
     <div class="commit-history">
       <div class="block-header  block-header_commit-history">
         <h2 class="title-m">История коммитов из GitHub</h2>
-        <a href="https://github.com/obonyasha/Diplom-Y.Practicum/commits/master" class="block-header__link roboto-normal-500"  target="_blank">Открыть в Github &gt;</a>
+        <a href="https://github.com/obonyasha/Diplom-Y.Practicum/commits/master"
+          class="block-header__link roboto-normal-500" target="_blank">Открыть в Github &gt;</a>
       </div>
       <div class="commit-history__container">
         <div class="main-carousel" data-flickity='{ "wrapAround": true }'>
@@ -126,8 +130,8 @@
                 </div>
               </div>
               <p class="subtitled-s subtitled-s_commit-history">
-                You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open   Tools >
-                Plugins > Available plugins   and find and install Emmet plugin.
+                You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open Tools >
+                Plugins > Available plugins and find and install Emmet plugin.
               </p>
             </div>
           </div>
@@ -184,15 +188,15 @@
       </div>
     </div>
     <footer class="footer">
-      <p class="logo logo__footer footer__copyright"> &#169; 2020 Tatiana Stepanova</p>
+      <p class="footer__copyright"> &#169; 2020 Tatiana Stepanova</p>
       <ul class="menu">
-        <li class="list-item">
+        <li class="footer__list">
           <a href="../index.html" class="footer__list-link">Главная</a>
         </li>
-        <li class="list-item">
+        <li class="footer__list">
           <a href="index.html" class="footer__list-link">О проекте</a>
         </li>
-        <li class="list-item">
+        <li class="footer__list">
           <a href="https://praktikum.yandex.ru/" class="footer__list-link" target="_blank">Яндекс.Практикум</a>
         </li>
       </ul>

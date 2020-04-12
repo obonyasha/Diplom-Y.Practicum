@@ -1,3 +1,26 @@
+@import url(./logo-link/logo-link.css);
+@import url(./logo_white/logo_white.css);
+
 .logo{
-  height: 24px;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1A1B22;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) and (min-width: 382px) {
+  .logo{
+    font-size: 16px;
+    line-height: 59px;
+  }
+}
+
+@media screen and (max-width: 382px) {
+  .logo{
+    font-size: 16px;
+    line-height: 51px;
+  }
 }
