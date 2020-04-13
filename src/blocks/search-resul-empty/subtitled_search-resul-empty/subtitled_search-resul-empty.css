@@ -1,6 +1,24 @@
 .subtitled_search-resul-empty{
-  width: 356px;
+  width: 23%;
   text-align: center;
   color: #B6BCBF !important;
   margin-top: 16px !important;
+}
+
+@media screen and (max-width: 768px) and (min-width: 541px) {
+  .subtitled_search-resul-empty {
+    width: 39%;
+  }
+}
+
+@media screen and (max-width: 540px) and (min-width: 421px){
+  .subtitled_search-resul-empty {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .subtitled_search-resul-empty {
+    width: 90%;
+  }
 }

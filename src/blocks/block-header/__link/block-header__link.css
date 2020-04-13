@@ -7,3 +7,15 @@
 .block-header__link:hover {
   color: #B6BCBF;;
 }
+
+@media screen and (max-width: 650px) and (min-width: 321px) {
+  .block-header__link {
+    margin-top: 24px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .block-header__link {
+    margin-top: 16px;
+  }
+}

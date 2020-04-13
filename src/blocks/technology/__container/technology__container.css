@@ -5,7 +5,21 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  width: 78%;
+  width: 86%;
+  margin: auto;
   margin-top: 80px;
-  margin-left: 104px;
+}
+
+@media screen and (max-width: 880px) and (min-width: 321px) {
+  .technology__container {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .technology__container {
+    flex-direction: column;
+    margin-top: 32px;
+  }
 }

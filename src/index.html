@@ -56,8 +56,8 @@
       </div>
       <div class="searching-results__container">
         <div class="searching-results__card">
-          <div class="searching-results__image">
-          </div>
+          <img src="<%=require('./images/image_04.jpg').default%>" alt="Searching results"
+            class="searching-results__image">
           <div class="searching-results__info">
             <time datetime="" class="searching-results__publication-date">2 августа, 2019</time>
             <h2 class="title-s title_card">Национальное достояние – парки</h2>
@@ -68,8 +68,8 @@
           <p class="searching-results__source-name">Лента.ру</p>
         </div>
         <div class="searching-results__card">
-          <div class="searching-results__image">
-          </div>
+          <img src="<%=require('./images/image_06.jpg').default%>" alt="Searching results"
+            class="searching-results__image">
           <div class="searching-results__info">
             <time datetime="" class="searching-results__publication-date">2 августа, 2019</time>
             <h2 class="title-s title_card">Лесные огоньки: история одной фотографии</h2>
@@ -81,8 +81,8 @@
           <p class="searching-results__source-name">Медуза</p>
         </div>
         <div class="searching-results__card">
-          <div class="searching-results__image">
-          </div>
+          <img src="<%=require('./images/image_07.jpg').default%>" alt="Searching results"
+            class="searching-results__image">
           <div class="searching-results__info">
             <time datetime="" class="searching-results__publication-date">2 августа, 2019</time>
             <h2 class="title-s title_card">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h2>
@@ -93,8 +93,8 @@
           <p class="searching-results__source-name">Риа</p>
         </div>
         <div class="searching-results__card">
-          <div class="searching-results__image">
-          </div>
+          <img src="<%=require('./images/image_08.jpg').default%>" alt="Searching results"
+            class="searching-results__image">
           <div class="searching-results__info">
             <time datetime="" class="searching-results__publication-date">2 августа, 2019</time>
             <h2 class="title-s title_card">Национальное достояние – парки</h2>
@@ -117,7 +117,7 @@
       <h3 class="subtitled-m subtitled_preloader">Идет поиск новостей...</h3>
     </div>
     <div class="author">
-      <div class="author__avatar"></div>
+      <img src="<%=require('./images/avatar.jpg').default%>" class="author__avatar">
       <div class="author__info">
         <h2 class="title-m title_author">Об авторе</h2>
         <p class="subtitled-m subtitled_author">Это блок с описанием автора проекта. Здесь следует указать, как вас
@@ -129,25 +129,28 @@
     </div>
     <footer class="footer">
       <p class="footer__copyright"> &#169; 2020 Tatiana Stepanova</p>
-      <ul class="menu">
-        <li class="footer__list">
-          <a href="index.html" class="footer__list-link" target="_blank">Главная</a>
-        </li>
-        <li class="footer__list">
-          <a href="./about.html" class="footer__list-link">О проекте</a>
-        </li>
-        <li class="footer__list">
-          <a href="https://praktikum.yandex.ru/" class="footer__list-link" target="_blank">Яндекс.Практикум</a>
-        </li>
-      </ul>
-      <div class="footer__icons">
-        <a href="https://github.com/obonyasha" target="_blank" class="footer__social-icons">
-          <img src="<%=require('./images/GITHUB.svg').default%>" alt="GITHUB">
-        </a>
-        <a href="https://vk.com/obonyasha" target="_blank">
-          <img src="<%=require('./images/vk_white.svg').default%>" alt="ВКонтакте" class="footer__social-icons">
-        </a>
+      <div class="footer__container">
+        <ul class="menu menu__footer">
+          <li class="footer__list">
+            <a href="index.html" class="footer__list-link">Главная</a>
+          </li>
+          <li class="footer__list">
+            <a href="./about.html" class="footer__list-link">О проекте</a>
+          </li>
+          <li class="footer__list">
+            <a href="https://praktikum.yandex.ru/" class="footer__list-link" target="_blank">Яндекс.Практикум</a>
+          </li>
+        </ul>
+        <div class="footer__icons">
+          <a href="https://github.com/obonyasha" target="_blank" class="footer__social-icons">
+            <img src="<%=require('./images/GITHUB.svg').default%>" alt="GITHUB">
+          </a>
+          <a href="https://vk.com/obonyasha" target="_blank">
+            <img src="<%=require('./images/vk_white.svg').default%>" alt="ВКонтакте" class="footer__social-icons">
+          </a>
+        </div>
       </div>
+
     </footer>
   </div>
   <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>

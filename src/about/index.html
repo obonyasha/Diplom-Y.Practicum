@@ -16,21 +16,23 @@
 <body>
   <div class="main">
     <header class="header">
-      <a class="logo-link" href="../index.html">
-        <p class="logo">NewsAnalyzer</p>
-      </a>
-      <ul class="menu">
-        <li class="list-item">
-          <a href="./index.html" class="link link_black">Главная</a>
-        </li>
-        <li class="list-item list-item_active_black">
-          <div>
-            <a href="./about.html" class="link link_active_black">О
-              проекте
-            </a>
-          </div>
-        </li>
-      </ul>
+      <div class="header__container">
+        <a class="logo-link" href="../index.html">
+          <p class="logo">NewsAnalyzer</p>
+        </a>
+        <ul class="menu">
+          <li class="list-item">
+            <a href="./index.html" class="link link_black">Главная</a>
+          </li>
+          <li class="list-item list-item_active_black">
+            <div>
+              <a href="./about.html" class="link link_active_black">О
+                проекте
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
     </header>
     <div class="info-to-clients">
       <h2 class="title-m">Клиентам</h2>
@@ -85,7 +87,7 @@
       </div>
     </div>
     <div class="author">
-      <div class="author__avatar"></div>
+      <img src="<%=require('../images/avatar.jpg').default%>" class="author__avatar">
       <div class="author__info">
         <h2 class="title-m title_author">Об авторе</h2>
         <p class="subtitled-m subtitled_author">Это блок с описанием автора проекта. Здесь следует указать, как вас
