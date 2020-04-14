@@ -1,3 +1,15 @@
 .commit-history__container {
   margin-top: 64px;
 }
+
+@media screen and (max-width: 768px) and (min-width: 321px) {
+  .commit-history__container {
+    margin-top: 32px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .commit-history__container {
+    margin-top: 16px;
+  }
+}

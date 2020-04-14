@@ -98,10 +98,12 @@
       </div>
     </div>
     <div class="commit-history">
-      <div class="block-header  block-header_commit-history">
-        <h2 class="title-m">История коммитов из GitHub</h2>
-        <a href="https://github.com/obonyasha/Diplom-Y.Practicum/commits/master"
-          class="block-header__link roboto-normal-500" target="_blank">Открыть в Github &gt;</a>
+      <div class="commit-history__header">
+        <div class="commit-history__header-container">
+          <h2 class="title-m title-m_commit-history">История коммитов из GitHub</h2>
+          <a href="https://github.com/obonyasha/Diplom-Y.Practicum/commits/master"
+            class="commit-history__link roboto-normal-500 hide" target="_blank">Открыть в Github &gt;</a>
+        </div>
       </div>
       <div class="commit-history__container">
         <div class="main-carousel" data-flickity='{ "wrapAround": true }'>
@@ -188,31 +190,37 @@
           </div>
         </div>
       </div>
+        <a href="https://github.com/obonyasha/Diplom-Y.Practicum/commits/master" class="commit-history__link commit-history__btn">
+          <p class="roboto-normal-500">Открыть в GitHub</p>
+        </a>
     </div>
     <footer class="footer">
       <p class="footer__copyright"> &#169; 2020 Tatiana Stepanova</p>
-      <ul class="menu">
-        <li class="footer__list">
-          <a href="../index.html" class="footer__list-link">Главная</a>
-        </li>
-        <li class="footer__list">
-          <a href="index.html" class="footer__list-link">О проекте</a>
-        </li>
-        <li class="footer__list">
-          <a href="https://praktikum.yandex.ru/" class="footer__list-link" target="_blank">Яндекс.Практикум</a>
-        </li>
-      </ul>
-      <div class="footer__icons">
-        <a href="https://github.com/obonyasha" target="_blank" class="footer__social-icons">
-          <img src="<%=require('../images/GITHUB.svg').default%>" alt="GITHUB">
-        </a>
-        <a href="https://vk.com/obonyasha" target="_blank">
-          <img src="<%=require('../images/vk_white.svg').default%>" alt="ВКонтакте" class="footer__social-icons">
-        </a>
+      <div class="footer__container">
+        <ul class="menu menu__footer">
+          <li class="footer__list">
+            <a href="../index.html" class="footer__list-link">Главная</a>
+          </li>
+          <li class="footer__list">
+            <a href="index.html" class="footer__list-link">О проекте</a>
+          </li>
+          <li class="footer__list">
+            <a href="https://praktikum.yandex.ru/" class="footer__list-link" target="_blank">Яндекс.Практикум</a>
+          </li>
+        </ul>
+        <div class="footer__icons">
+          <a href="https://github.com/obonyasha" target="_blank" class="footer__social-icons">
+            <img src="<%=require('../images/GITHUB.svg').default%>" alt="GITHUB">
+          </a>
+          <a href="https://vk.com/obonyasha" target="_blank">
+            <img src="<%=require('../images/vk_white.svg').default%>" alt="ВКонтакте" class="footer__social-icons">
+          </a>
+        </div>
       </div>
     </footer>
   </div>
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="<%= htmlWebpackPlugin.files.chunks.about.entry %>"></script>
 </body>
 
 </html>

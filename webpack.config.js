@@ -8,7 +8,7 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: {
-   // flickity: './node_modules/flickity/dist/flickity.pkgd.min.js',
+    // flickity: './node_modules/flickity/dist/flickity.pkgd.min.js',
     main: './src/index.js',
     about: './src/about/index.js',
     analytics: './src/analytics/index.js'
@@ -58,15 +58,18 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      filename: 'index.html'
+      filename: 'index.html',
+      inject: false
     }),
     new HtmlWebpackPlugin({
       template: './src/about/index.html',
-      filename: 'about.html'
+      filename: 'about.html',
+      inject: false
     }),
     new HtmlWebpackPlugin({
       template: './src/analytics/index.html',
-      filename: 'analytics.html'
+      filename: 'analytics.html',
+      inject: false
     }),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({
