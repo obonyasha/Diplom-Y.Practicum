@@ -8,7 +8,7 @@
 @import url(./__header/commit-history__header.css);
 @import url(./title-m_commit-history/title-m_commit-history.css);
 @import url(./__btn/commit-history__btn.css);
-@import url(./hide/hide.css);
+@import url(./title-s_commit-history/title-s_commit-history.css);
 
 .commit-history {
   display: flex;

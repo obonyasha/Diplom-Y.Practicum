@@ -6,3 +6,15 @@
   margin-top: 94px;
   background-color: #F5F6F7;
 }
+
+@media screen and (max-width: 768px) and (min-width: 321px) {
+  .technology {
+    margin-top: 26px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .technology {
+    margin-top: 16px;
+  }
+}

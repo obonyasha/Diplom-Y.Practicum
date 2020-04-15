@@ -2,6 +2,8 @@
   margin-top: 16px;
 }
 
-.barchart__scale-value:first-child {
-  margin-left: 104px;
+@media screen and (max-width: 320px) {
+  .barchart__scale-value {
+    display: none;
+  }
 }

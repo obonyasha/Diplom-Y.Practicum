@@ -1,3 +1,5 @@
+@import url(./hide_320/hide_320.css);
+
 @media screen and (max-width: 420px) {
   .hide {
     display: none;

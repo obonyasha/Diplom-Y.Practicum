@@ -16,21 +16,23 @@
 <body>
   <div class="main">
     <header class="header">
-      <a class="logo-link" href="../index.html">
-        <p class="logo">NewsAnalyzer</p>
-      </a>
-      <ul class="menu">
-        <li class="list-item">
-          <a href="./index.html" class="link link_black">Главная</a>
-        </li>
-        <li class="list-item">
-          <a href="./about.html" class="link link_black">О
-            проекте</a>
-        </li>
-      </ul>
+      <div class="header__container">
+        <a class="logo-link" href="../index.html">
+          <p class="logo">NewsAnalyzer</p>
+        </a>
+        <ul class="menu">
+          <li class="list-item">
+            <a href="./index.html" class="link link_black">Главная</a>
+          </li>
+          <li class="list-item">
+            <a href="./about.html" class="link link_black">О
+              проекте</a>
+          </li>
+        </ul>
+      </div>
     </header>
     <div class="analytics-header">
-      <p class="subtitled-m">Главная <span class="subtitled-m_analytics-header"> / Аналитика</span></p>
+      <p class="subtitled-m hide_320">Главная <span class="subtitled-m_analytics-header"> / Аналитика</span></p>
       <h2 class="title-m title-m_analytics-header">Вы спросили: «Путешествия»</h2>
       <p class="subtitled-m subtitled-m_news">Новостей за неделю: <span class="subtitled-m_bold">34 324</span></p>
       <p class="subtitled-m">Упоминаний в загаловках: <span class="subtitled-m_bold">235</span></p>
@@ -40,18 +42,22 @@
         <h2 class="title-s title-s_statistics">Аналитика по дням</h2>
         <div class="barchart">
           <div class="barchart__columns">
-            <div class="barchart__y-axis">
-              <p class="barchart__name-axis">дата</p>
-              <p class="barchart__name-axis">(август)</p>
+            <div class="barchart__day barchart__y-axis">
+              <p class="barchart__list barchart__name-axis">дата (август)</p>
             </div>
-            <p class="barchart__name-axis barchart__name-axis_x">кол-во упоминаний</p>
+            <p class="barchart__name-axis barchart__scale">кол-во упоминаний</p>
           </div>
-          <div class="barchart__scale barchart__scale_top">
-            <p class="barchart__scale-value barchart__name-axis">0</p>
-            <p class="barchart__scale-value barchart__name-axis">25</p>
-            <p class="barchart__scale-value barchart__name-axis">50</p>
-            <p class="barchart__scale-value barchart__name-axis">75</p>
-            <p class="barchart__scale-value barchart__name-axis">100</p>
+          <div class="barchart__columns barchart__columns_scale-top">
+            <div class="barchart__day">
+              <p class="barchart__list"></p>
+            </div>
+            <div class="barchart__scale">
+              <p class="barchart__scale-value barchart__name-axis">0</p>
+              <p class="barchart__scale-value barchart__name-axis">25</p>
+              <p class="barchart__scale-value barchart__name-axis">50</p>
+              <p class="barchart__scale-value barchart__name-axis">75</p>
+              <p class="barchart__scale-value barchart__name-axis">100</p>
+            </div>
           </div>
           <div class="barchart__columns">
             <div class="barchart__day">
@@ -64,59 +70,66 @@
               <p class="barchart__list">25, вс</p>
             </div>
             <div class="barchart__data">
-              <div class="barchart__quantity">
+              <div class="barchart__quantity barchart__quantity_mon">
                 <p class="barchart__quantity_mon">15</p>
               </div>
-              <div class="barchart__quantity">
+              <div class="barchart__quantity barchart__quantity_tues">
                 <p class="barchart__quantity_tues">18</p>
               </div>
-              <div class="barchart__quantity">
+              <div class="barchart__quantity barchart__quantity_wed">
                 <p class="barchart__quantity_wed">11</p>
               </div>
-              <div class="barchart__quantity">
+              <div class="barchart__quantity barchart__quantity_thur">
                 <p class="barchart__quantity_thur">39</p>
               </div>
-              <div class="barchart__quantity">
+              <div class="barchart__quantity barchart__quantity_fri">
                 <p class="barchart__quantity_fri">45</p>
               </div>
-              <div class="barchart__quantity">
+              <div class="barchart__quantity barchart__quantity_sat">
                 <p class="barchart__quantity_sat">73</p>
               </div>
-              <div class="barchart__quantity">
+              <div class="barchart__quantity barchart__quantity_sun">
                 <p class="barchart__quantity_sun">34</p>
               </div>
             </div>
           </div>
-          <div class="barchart__scale">
-            <p class="barchart__scale-value barchart__name-axis">0</p>
-            <p class="barchart__scale-value barchart__name-axis">25</p>
-            <p class="barchart__scale-value barchart__name-axis">50</p>
-            <p class="barchart__scale-value barchart__name-axis">75</p>
-            <p class="barchart__scale-value barchart__name-axis">100</p>
+          <div class="barchart__columns">
+            <div class="barchart__day">
+              <p class="barchart__list"></p>
+            </div>
+            <div class="barchart__scale">
+              <p class="barchart__scale-value barchart__name-axis">0</p>
+              <p class="barchart__scale-value barchart__name-axis">25</p>
+              <p class="barchart__scale-value barchart__name-axis">50</p>
+              <p class="barchart__scale-value barchart__name-axis">75</p>
+              <p class="barchart__scale-value barchart__name-axis">100</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <footer class="footer">
       <p class="footer__copyright"> &#169; 2020 Tatiana Stepanova</p>
-      <ul class="menu">
-        <li class="footer__list">
-          <a href="../index.html" class="footer__list-link">Главная</a>
-        </li>
-        <li class="footer__list">
-          <a href="index.html" class="footer__list-link">О проекте</a>
-        </li>
-        <li class="footer__list">
-          <a href="https://praktikum.yandex.ru/" class="footer__list-link" target="_blank">Яндекс.Практикум</a>
-        </li>
-      </ul>
-      <div class="footer__icons">
-        <a href="https://github.com/obonyasha" target="_blank" class="footer__social-icons">
-          <img src="<%=require('../images/GITHUB.svg').default%>" alt="GITHUB">
-        </a>
-        <a href="https://vk.com/obonyasha" target="_blank">
-          <img src="<%=require('../images/vk_white.svg').default%>" alt="ВКонтакте" class="footer__social-icons">
-        </a>
+      <div class="footer__container">
+        <ul class="menu menu__footer">
+          <li class="footer__list">
+            <a href="../index.html" class="footer__list-link">Главная</a>
+          </li>
+          <li class="footer__list">
+            <a href="index.html" class="footer__list-link">О проекте</a>
+          </li>
+          <li class="footer__list">
+            <a href="https://praktikum.yandex.ru/" class="footer__list-link" target="_blank">Яндекс.Практикум</a>
+          </li>
+        </ul>
+        <div class="footer__icons">
+          <a href="https://github.com/obonyasha" target="_blank" class="footer__social-icons">
+            <img src="<%=require('../images/GITHUB.svg').default%>" alt="GITHUB">
+          </a>
+          <a href="https://vk.com/obonyasha" target="_blank">
+            <img src="<%=require('../images/vk_white.svg').default%>" alt="ВКонтакте" class="footer__social-icons">
+          </a>
+        </div>
       </div>
     </footer>
   </div>

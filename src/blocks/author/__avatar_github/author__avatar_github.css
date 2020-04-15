@@ -2,3 +2,15 @@
   width: 64px;
   height: 64px;
 }
+
+@media screen and (max-width: 768px) and (min-width: 321px) {
+  .author__avatar_github {
+    width: 18% !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .author__avatar_github {
+    width: 20% !important;
+  }
+}

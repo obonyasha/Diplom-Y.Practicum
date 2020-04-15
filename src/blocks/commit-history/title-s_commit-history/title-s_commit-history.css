@@ -1,0 +1,6 @@
+@media screen and (max-width: 320px) {
+  .title-s_commit-history {
+    font-size: 19px !important;
+    line-height: 30px !important;
+  }
+}

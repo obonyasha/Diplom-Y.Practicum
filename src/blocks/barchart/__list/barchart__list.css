@@ -1,5 +1,5 @@
 .barchart__list {
-  height: 24px;
+  width: 50px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -11,5 +11,10 @@
 
 .barchart__list:first-child {
   margin-top: 0;
+}
 
+@media screen and (max-width: 320px) {
+  .barchart__list {
+    margin-top: 24px;
+  }
 }

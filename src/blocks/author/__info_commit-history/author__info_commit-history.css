@@ -1,3 +1,9 @@
 .author__info_commit-history{
   margin-left: 16px !important;
 }
+
+@media screen and (max-width: 640px) {
+  .author__info_commit-history {
+    margin-top: 0 !important;
+  }
+}
