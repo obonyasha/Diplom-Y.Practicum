@@ -17,6 +17,14 @@
   color:#B6BCBF;
 }
 
+input::-webkit-input-placeholder {color: #B6BCBF;}
+input::-moz-placeholder          {color: #B6BCBF;}
+input::-ms-input-placeholder {color: #B6BCBF;}
+
+.search__input:hover {
+  box-shadow: inset 3px -3px 9px 0px #2F71E5;
+}
+
 @media screen and (max-width: 768px) and (min-width: 321px) {
   .search__input {
     height: 56px;
