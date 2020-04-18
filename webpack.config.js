@@ -5,8 +5,12 @@ const WebpackMd5Hash = require('webpack-md5-hash');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const isDev = process.env.NODE_ENV === 'development';
 const webpack = require('webpack');
-const  ImageminPlugin  = require('imagemin-webpack-plugin').default;
+const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const ImageminGifsicle = require('imagemin-gifsicle');
+const ImageminJpegtran = require('imagemin-jpegtran');
+const ImageminOptipng = require('imagemin-optipng');
+const ImageminSvgo = require('imagemin-svgo');
 
 module.exports = {
   entry: {
@@ -89,6 +93,24 @@ module.exports = {
       from: './src/images/',
       to: './images/'
     }]),
-    new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i })
+    new ImageminPlugin({
+      bail: false,
+      imageminOptions: {
+        plugins: [
+          ImageminGifsicle({
+            interlaced: true
+          }),
+          ImageminJpegtran({
+            progressive: true
+          }),
+          ImageminOptipng({
+            optimizationLevel: 5
+          }),
+          ImageminSvgo({
+            removeViewBox: true
+          })
+        ]
+      }
+    }),
   ]
 };

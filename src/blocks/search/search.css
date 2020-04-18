@@ -12,3 +12,15 @@
   background-size: cover;
   width: 100%;
 }
+
+@media screen and (max-width: 768px) and (min-width: 321px) {
+  .search {
+    background-image: url('../../images/seach_bg_768.jpg');
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .search {
+    background-image: url('../../images/seach_bg_320.jpg');
+  }
+}

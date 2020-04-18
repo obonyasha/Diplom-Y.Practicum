@@ -17,6 +17,10 @@
   box-shadow: 9px -9px 4px -3px rgba(16,16,16) inset;
 }
 
+.searching-results__btn-show-more:focus{
+  outline: none;
+}
+
 @media screen and (max-width: 768px) and (min-width: 321px) {
   .searching-results__btn-show-more {
     margin-top: 22px;

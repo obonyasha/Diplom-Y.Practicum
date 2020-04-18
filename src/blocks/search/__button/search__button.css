@@ -18,6 +18,10 @@
   box-shadow: 7px -7px 1px -3px rgb(170,209,238) inset;
 }
 
+.search__button:focus{
+  outline: none;
+}
+
 @media screen and (max-width: 320px) {
   .search__button {
     width: 100%;
