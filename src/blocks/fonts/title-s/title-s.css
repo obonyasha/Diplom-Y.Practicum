@@ -1,0 +1,23 @@
+.title-s {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+  color: #1A1B22;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) and (min-width: 321px) {
+  .title-s {
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .title-s {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}

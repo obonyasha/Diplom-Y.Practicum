@@ -1,0 +1,9 @@
+.subtitled-m_news {
+  margin-top: 24px !important;
+}
+
+@media screen and (max-width: 320px) {
+  .subtitled-m_news {
+    margin-top: 16px !important;
+  }
+}

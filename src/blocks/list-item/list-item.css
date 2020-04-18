@@ -1,0 +1,25 @@
+@import url(./list-item_active/list-item_active.css);
+@import url(./list-item_active_black/list-item_active_black.css);
+
+.list-item{
+  display: flex;
+  align-items: center;
+  height: 97%;
+  margin-right: 34px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.list-item:last-child{
+  margin-right: 0;
+}
+
+@media screen and (max-width: 426px) {
+  .list-item {
+    margin-right: 11px;
+  }
+}
+

@@ -1,0 +1,16 @@
+@import url(./title_block-header/title_block-header.css);
+@import url(./__link/block-header__link.css);
+
+.block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 86%;
+}
+
+@media screen and (max-width: 650px) {
+  .block-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

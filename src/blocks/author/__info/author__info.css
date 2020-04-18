@@ -1,0 +1,26 @@
+@import url(../subtitled_author/subtitled_author.css);
+@import url(../title_author/title_author.css);
+@import url(../__info_commit-history/author__info_commit-history.css);
+
+.author__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  width: 600px;
+  margin-left: 56px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 641px) {
+  .author__info {
+    width: 64%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .author__info {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 24px;
+  }
+}

@@ -1,0 +1,11 @@
+.author__avatar {
+  width: 38%;
+  height: auto;
+  border-radius: 1000px;
+}
+
+@media screen and (max-width: 640px) {
+  .author__avatar {
+    width: 100%;
+  }
+}

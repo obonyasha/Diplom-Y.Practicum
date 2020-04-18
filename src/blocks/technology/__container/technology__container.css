@@ -1,0 +1,25 @@
+@import url(../__container-icons/technology__container-icons.css);
+@import url(../title-m_technology/title-m_technology.css);
+
+.technology__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 86%;
+  margin: auto;
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 880px) and (min-width: 321px) {
+  .technology__container {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .technology__container {
+    flex-direction: column;
+    margin-top: 32px;
+  }
+}

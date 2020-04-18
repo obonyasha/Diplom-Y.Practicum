@@ -1,0 +1,11 @@
+@import url(../__image/searching-results__image.css);
+@import url(../__info/searching-results__info.css);
+@import url(../__source-name/searching-results__source-name.css);
+
+.searching-results__card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 16px;
+  background-color: #fff;
+}

@@ -1,0 +1,9 @@
+.subtitled_author {
+  margin-top: 24px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .subtitled_author {
+    margin-top: 16px !important;
+  }
+}

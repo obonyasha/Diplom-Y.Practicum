@@ -1,0 +1,14 @@
+@import url(./__columns/barchart__columns.css);
+@import url(./__scale/barchart__scale.css);
+
+.barchart {
+  width: 100%;
+  margin: auto;
+  margin-top: 48px;
+}
+
+@media screen and (max-width: 320px) {
+  .barchart {
+    margin-top: 16px;
+  }
+}

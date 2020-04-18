@@ -1,0 +1,24 @@
+.commit-history__btn {
+  text-align    : center;
+  vertical-align: middle;
+  width         : 86%;
+  height        : 56px;
+  border        : 1px solid #1A1B22;
+  border-radius : 80px;
+  margin        : auto;
+  margin-top    : 40px;
+  display       : none;
+
+}
+
+@media screen and (min-width: 1440px) {
+  .commit-history__btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .commit-history__btn {
+    display: block;
+  }
+}

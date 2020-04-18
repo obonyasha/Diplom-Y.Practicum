@@ -1,0 +1,15 @@
+.title-m_analytics-header {
+  margin-top: 80px !important;
+}
+
+@media screen and (max-width: 768px) and (min-width: 321px) {
+  .title-m_analytics-header {
+    margin-top: 64px !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .title-m_analytics-header {
+    margin-top: 16px !important;
+  }
+}

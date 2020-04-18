@@ -1,0 +1,33 @@
+@import url(../__container-icon/technology__container-icon.css);
+
+.technology__container-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 54%;
+}
+
+@media screen and (max-width: 768px) and (min-width: 321px) {
+  .technology__container-icons {
+    margin-top: 40px;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 880px) and (min-width: 541px) {
+  .technology__container-icons {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .technology__container-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 52px;
+  }
+}

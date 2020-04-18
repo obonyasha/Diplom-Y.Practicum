@@ -1,0 +1,9 @@
+.barchart__scale-value {
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 320px) {
+  .barchart__scale-value {
+    display: none;
+  }
+}

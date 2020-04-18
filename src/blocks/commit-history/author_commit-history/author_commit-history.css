@@ -1,0 +1,17 @@
+.author_commit-history {
+  width: 100%;
+  padding: 0 !important;
+  margin-top: 16px !important;
+}
+
+@media screen and (max-width: 640px) {
+  .author_commit-history {
+    flex-direction: row !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .author_commit-history {
+    margin-top: 11px !important;
+  }
+}

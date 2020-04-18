@@ -1,0 +1,10 @@
+@import url(../__quantity/barchart__quantity.css);
+
+.barchart__data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 92%;
+  padding-left: 4%;
+}

@@ -1,0 +1,14 @@
+@import url(./__container/search__container.css);
+@import url(./input-container/input-container.css);
+
+.search{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-image: url('../../images/seach-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}

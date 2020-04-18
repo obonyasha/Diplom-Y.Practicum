@@ -1,0 +1,38 @@
+@import url(../__title/search__title.css);
+@import url(../__subtitled/search__subtitled.css);
+@import url(../__form/search__form.css);
+
+
+.search__container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 42%;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media screen and (max-width: 806px) and (min-width: 769px) {
+  .search__container {
+    width: 50%;
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 352px) {
+  .search__container {
+    width: 58%;
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (max-width: 351px) {
+  .search__container {
+    width: 90%;
+    padding-top: 30px;
+    padding-bottom: 32px;
+  }
+}

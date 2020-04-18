@@ -1,0 +1,8 @@
+@import url(../__scale-value/barchart__scale-value.css);
+
+.barchart__scale {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 4.5%;
+}

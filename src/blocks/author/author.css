@@ -1,0 +1,26 @@
+@import url(./__avatar/author__avatar.css);
+@import url(./__info/author__info.css);
+
+.author {
+  display: flex;
+  width: 86%;
+  align-items: flex-start;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media screen and (max-width: 640px) {
+  .author {
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .author {
+    padding-top: 30px;
+    padding-bottom: 32px;
+  }
+}

@@ -1,0 +1,23 @@
+@import url(../__publication-date/searching-results__publication-date.css);
+
+.searching-results__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 88%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 321px) {
+  .searching-results__info  {
+    margin-top: 16px;
+
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .searching-results__info {
+    margin-top: 10px;
+  }
+}

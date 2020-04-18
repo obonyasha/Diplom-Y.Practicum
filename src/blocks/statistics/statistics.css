@@ -1,0 +1,25 @@
+@import url(./__bar-chart/statistics__bar-chart.css);
+
+.statistics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: #F5F6F7;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 321px) {
+  .statistics {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .statistics {
+    padding-top: 24px;
+    padding-bottom: 38px;
+  }
+}

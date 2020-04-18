@@ -1,0 +1,15 @@
+@import url(../__icon/technology__icon.css);
+@import url(../__name/technology__name.css);
+
+.technology__container-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .technology__container-icon {
+    margin-left: 0px;
+  }
+}

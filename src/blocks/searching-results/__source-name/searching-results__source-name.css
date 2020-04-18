@@ -1,0 +1,28 @@
+.searching-results__source-name {
+  width: 88%;
+  margin: auto;
+  margin-top: 18px;
+  margin-bottom: 24px;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #B6BCBF;
+}
+
+@media screen and (max-width: 768px) and (min-width: 321px) {
+  .searching-results__source-name{
+    margin-top: 12px;
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .searching-results__source-name{
+    margin-top: 5 px;
+    margin-bottom: 16px;
+  }
+}

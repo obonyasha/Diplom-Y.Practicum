@@ -1,0 +1,30 @@
+.searching-results__btn-show-more {
+  width: 288px;
+  height: 64px;
+  background: #fff;
+  border-radius: 80px;
+  border: none;
+  color: #1A1B22;
+  margin-top: 64px;
+}
+
+.searching-results__btn-show-more:hover {
+  opacity: 0.9;
+}
+
+.searching-results__btn-show-more:active {
+  opacity: 0.9;
+  box-shadow: 9px -9px 4px -3px rgba(16,16,16) inset;
+}
+
+@media screen and (max-width: 768px) and (min-width: 321px) {
+  .searching-results__btn-show-more {
+    margin-top: 22px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .searching-results__btn-show-more {
+    margin-top: 12px;
+  }
+}

@@ -1,0 +1,20 @@
+.barchart__list {
+  width: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #1A1B22;
+  margin: 0;
+  margin-top: 56px;
+}
+
+.barchart__list:first-child {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 320px) {
+  .barchart__list {
+    margin-top: 24px;
+  }
+}
