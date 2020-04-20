@@ -1,10 +1,9 @@
 export default class GithubApi {
-  constructor(options) {
-
+  constructor() {
   }
 
-  getNews(querySearch='key') {
-    return fetch('https://api.github.com/repos/obonyasha/Diplom-Y.Practicum/commits', {
+  getCommits() {
+    return fetch("https://api.github.com/repos/obonyasha/Diplom-Y.Practicum/commits", {
       method: 'GET'
     })
       .then(res => {
