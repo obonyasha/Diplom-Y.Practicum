@@ -3,10 +3,12 @@ import "./style.css";
 import NewsCard from "./js/components/NewsCard";
 import NewsCardList from "./js/components/NewsCardList";
 import NewsApi from "./js/modules/NewsApi";
+import SearchInput from "./js/components/SearchInput";
 
 const cardListElement = document.querySelector('.searching-results__container');
 const inputSearchElement = document.querySelector('.search__input');
-
+const buttonElement = document.querySelector('.search__button');
+const errorElement = document.querySelector('.error-message');
 
 const newsCard = new NewsCard();
 const newsApi = new NewsApi(
@@ -20,3 +22,5 @@ const newsApi = new NewsApi(
 const newsCardList = new NewsCardList(cardListElement, newsCard, newsApi, inputSearchElement);
 
 newsCardList.getNewsFromServer();
+
+const searchInput = new SearchInput(newsCardList, inputSearchElement, buttonElement, errorElement);

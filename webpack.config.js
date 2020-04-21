@@ -14,7 +14,6 @@ const ImageminSvgo = require('imagemin-svgo');
 
 module.exports = {
   entry: {
-    // flickity: './node_modules/flickity/dist/flickity.pkgd.min.js',
     main: './src/index.js',
     about: './src/about/index.js',
     analytics: './src/analytics/index.js'
@@ -112,5 +111,6 @@ module.exports = {
         ]
       }
     }),
-  ]
+  ],
+  devtool: 'source-map'
 };

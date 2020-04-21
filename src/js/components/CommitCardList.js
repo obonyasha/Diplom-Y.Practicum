@@ -8,7 +8,8 @@ export default class CommitCardList {
 
   addCardCommits(data) {
     let allTemplates = '';
-    for (const element of data) {
+    const data_20 = data.splice(0,20);//превратить в метод и перенести во вспомогательный (наверно)
+    for (const element of data_20) {
       const templateCommitsCard = this.commitCard.getTemplate(element);
       allTemplates += templateCommitsCard;
     }
@@ -17,11 +18,10 @@ export default class CommitCardList {
 
   getCommitsFromServer() {
     this.githubApi.getCommits().then(res => {
-      debugger;
       this.addCardCommits(res);
     })
   }
   getNodes(str) {
-    return new DOMParser().parseFromString(str, 'text/html').body.childNodes;
+    return new DOMParser().parseFromString(str, 'text/html').body.childNodes; //метод перенести во вспомогательный (наверно)
   }
 }

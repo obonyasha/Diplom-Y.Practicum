@@ -3,7 +3,7 @@ export default class NewsCard {
 
   getTemplate(data) {
     const template = `<div class="searching-results__card">
-    <img src="url(${data.urlToImage})" alt="Searching results"
+    <img src="${data.urlToImage}" alt="Searching results"
       class="searching-results__image">
     <div class="searching-results__info">
       <p class="searching-results__publication-date">${data.publishedAt}</p>
