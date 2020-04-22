@@ -38,18 +38,17 @@
       </header>
       <div class="search__container">
         <h1 class="search__title">Что в мире творится?</h1>
-        <h3 class="search__subtitled">Введите в поиске любую тему и узнайте, насколько популярной она была в носотях за
+        <h3 class="search__subtitled">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за
           прошедшую неделю.</h3>
         <form class="search__form" novalidate>
           <div class="search__form-container">
-            <input type="text" id="name" placeholder="Введите тему новости" class="search__input" minlength="1"
+            <input type="text" name="news-name" placeholder="Введите тему новости" class="search__input" minlength="1"
               required>
-              <button type="submit" class="search__button roboto-normal-500" disabled>Искать</button>
+            <button type="submit" name="search-button" class="search__button roboto-normal-500" disabled>Искать</button>
           </div>
           <div class="input-container">
-            <span id="error-name" class="error-message"></span>
+            <span name="error-message" class="error-message"></span>
           </div>
-
         </form>
       </div>
     </div>
@@ -59,6 +58,27 @@
         <a href="./analytics.html" class="block-header__link roboto-normal-500">Посмотреть аналитику &gt;</a>
       </div>
       <div class="searching-results__container">
+      </div>
+      <button class="searching-results__btn-show-more roboto-normal-500 hide">Показать еще</button>
+    </div>
+    <div class="search-resul-empty">
+      <img src="<%=require('./images/not-found.svg').default%>" alt="not found" class="search-resul-empty__image">
+      <h2 class="title-s title_search-resul-empty">Ничего не найдено</h2>
+      <h3 class="subtitled-s subtitled_search-resul-empty">К сожалению по вашему запросу ничего не найдено.</h3>
+    </div>
+    <div class="preloader">
+      <i class="circle-preloader"></i>
+      <h3 class="subtitled-m subtitled_preloader">Идет поиск новостей...</h3>
+    </div>
+    <div class="author">
+      <img src="<%=require('./images/avatar.jpg').default%>" alt="Фото Степановой Татьяны" class="author__avatar">
+      <div class="author__info">
+        <h2 class="title-m title_author">Об авторе</h2>
+        <p class="subtitled-m subtitled_author">Это блок с описанием автора проекта. Здесь следует указать, как вас
+          зовут,
+          чем вы занимаетесь, какими технологиями разработки владете.<br>
+          Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь
+          потенциальным заказчикам.</p>
       </div>
     </div>
     <footer class="footer">

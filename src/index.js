@@ -6,6 +6,7 @@ import NewsApi from "./js/modules/NewsApi";
 import SearchInput from "./js/components/SearchInput";
 
 const cardListElement = document.querySelector('.searching-results__container');
+const searchForm = document.querySelector('.search__form');
 const inputSearchElement = document.querySelector('.search__input');
 const buttonElement = document.querySelector('.search__button');
 const errorElement = document.querySelector('.error-message');
@@ -21,6 +22,12 @@ const newsApi = new NewsApi(
 );
 const newsCardList = new NewsCardList(cardListElement, newsCard, newsApi, inputSearchElement);
 
-newsCardList.getNewsFromServer();
+//newsCardList.getNewsFromServer();
 
 const searchInput = new SearchInput(newsCardList, inputSearchElement, buttonElement, errorElement);
+
+searchForm.addEventListener('submit', function (event) {
+  event.preventDefault();
+  newsCardList.getNewsFromServer();
+}
+);

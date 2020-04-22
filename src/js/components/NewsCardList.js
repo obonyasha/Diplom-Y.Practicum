@@ -14,8 +14,11 @@ export default class NewsCardList {
   }
 
   getNewsFromServer() {
-    this.newsApi.getNews().then(res => {
-      this.addCardNews(res.articles);
+    this.newsApi.getNews(this.inputSearchElement.value).then(res => {
+      if (res) {
+        this.addCardNews(res.articles);
+      } else /*добавлеие класса 'open' классу 'search-resul-empty'*/
+
     })
   }
 }

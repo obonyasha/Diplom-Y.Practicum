@@ -8,7 +8,7 @@ export default class NewsApi {
     this.from.setDate(this.from.getDate()-6);
   }
 
-  getNews(querySearch='кино') {
+  getNews(querySearch) {
     return fetch(`${this.baseUrl}/everything?q=${querySearch}&from=${this.from.toISOString()}&to=${this.to.toISOString()}&pageSize=${this.pageSize}&apiKey=${this.apiKey}`, {
       method: 'GET'
     })
