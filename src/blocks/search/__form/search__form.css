@@ -1,8 +1,10 @@
 @import url(../__input/search__input.css);
 @import url(../__button/search__button.css);
+@import url(../__form-container/search__form-container.css);
 
 .search__form {
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   width: 95%;
   margin-top: 64px;

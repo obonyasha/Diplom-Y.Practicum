@@ -40,12 +40,16 @@
         <h1 class="search__title">Что в мире творится?</h1>
         <h3 class="search__subtitled">Введите в поиске любую тему и узнайте, насколько популярной она была в носотях за
           прошедшую неделю.</h3>
-        <form class="search__form">
+        <form class="search__form" novalidate>
+          <div class="search__form-container">
+            <input type="text" id="name" placeholder="Введите тему новости" class="search__input" minlength="1"
+              required>
+              <button type="submit" class="search__button roboto-normal-500" disabled>Искать</button>
+          </div>
           <div class="input-container">
-            <input type="text" id="name" placeholder="Введите тему новости" class="search__input" minlength = "1" required>
             <span id="error-name" class="error-message"></span>
           </div>
-          <button type="submit" class="search__button roboto-normal-500">Искать</button>
+
         </form>
       </div>
     </div>
@@ -55,76 +59,6 @@
         <a href="./analytics.html" class="block-header__link roboto-normal-500">Посмотреть аналитику &gt;</a>
       </div>
       <div class="searching-results__container">
-        <!-- <div class="searching-results__card">
-          <img src="<%=require('./images/image_04.jpg').default%>" alt="Searching results"
-            class="searching-results__image">
-          <div class="searching-results__info">
-            <p class="searching-results__publication-date">2 августа, 2019</p>
-            <h2 class="title-s title_card">Национальное достояние – парки</h2>
-            <h3 class="subtitled-s subtitled_card">В 2016 году Америка отмечала важный юбилей:
-              сто лет назад здесь начала складываться система национальных парков – охраняемых территорий,
-              где и сегодня каждый может приобщиться к природе.</h3>
-          </div>
-          <p class="searching-results__source-name">Лента.ру</p>
-        </div>
-        <div class="searching-results__card">
-          <img src="<%=require('./images/image_06.jpg').default%>" alt="Searching results"
-            class="searching-results__image">
-          <div class="searching-results__info">
-            <p class="searching-results__publication-date">2 августа, 2019</p>
-            <h2 class="title-s title_card">Лесные огоньки: история одной фотографии</h2>
-            <h3 class="subtitled-s subtitled_card">Фотограф отвлеклась от освещения суровой политической реальности
-              Мексики,
-              чтобы запечатлеть ускользающую красоту одного
-              из местных чудес природы.</h3>
-          </div>
-          <p class="searching-results__source-name">Медуза</p>
-        </div>
-        <div class="searching-results__card">
-          <img src="<%=require('./images/image_07.jpg').default%>" alt="Searching results"
-            class="searching-results__image">
-          <div class="searching-results__info">
-            <p class="searching-results__publication-date">2 августа, 2019</p>
-            <h2 class="title-s title_card">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h2>
-            <h3 class="subtitled-s subtitled_card">Знаменитый фотограф снимает первозданные леса России,
-              чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...
-            </h3>
-          </div>
-          <p class="searching-results__source-name">Риа</p>
-        </div>
-        <div class="searching-results__card">
-          <img src="<%=require('./images/image_08.jpg').default%>" alt="Searching results"
-            class="searching-results__image">
-          <div class="searching-results__info">
-            <p class="searching-results__publication-date">2 августа, 2019</p>
-            <h2 class="title-s title_card">Национальное достояние – парки</h2>
-            <h3 class="subtitled-s subtitled_card">В 2016 году Америка отмечала важный юбилей:
-              сто лет назад здесь начала складываться система национальных парков – охраняемых территорий,
-              где и сегодня каждый может приобщиться к природе.</h3>
-          </div>
-          <p class="searching-results__source-name">Дзен</p>
-        </div> -->
-      </div>
-      <button class="searching-results__btn-show-more roboto-normal-500">Показать еще</button>
-    </div>
-    <div class="search-resul-empty">
-      <img src="<%=require('./images/not-found.svg').default%>" alt="not found" class="search-resul-empty__image">
-      <h2 class="title-s title_search-resul-empty">Ничего не найдено</h2>
-      <h3 class="subtitled-s subtitled_search-resul-empty">К сожалению по вашему запросу ничего не найдено.</h3>
-    </div>
-    <div class="preloader">
-      <i class="circle-preloader"></i>
-      <h3 class="subtitled-m subtitled_preloader">Идет поиск новостей...</h3>
-    </div>
-    <div class="author">
-      <img src="<%=require('./images/avatar.jpg').default%>" alt="Фото Степановой Татьяны" class="author__avatar">
-      <div class="author__info">
-        <h2 class="title-m title_author">Об авторе</h2>
-        <p class="subtitled-m subtitled_author">Это блок с описанием автора проекта. Здесь следует указать, как вас
-          зовут,
-          чем вы занимаетесь, какими технологиями разработки владете.<br>
-          Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь
-          потенциальным заказчикам.</p>
       </div>
     </div>
     <footer class="footer">

@@ -5,14 +5,15 @@ export default class SearchInput {
     this.getNewsCallback = getNewsCallback;
     this.errorElement = errorElement;
     this._setHandlers();
-    this.checkInputValidity();
   }
 
   _setHandlers() {
-    this.inputElement.oninput = () => {
+    /*this.inputElement.oninput = () => {
       const isValidForm = this.checkInputValidity();
       this.setSubmitButtonState(isValidForm);
-    };
+    };*/
+    this.inputElement.addEventListener('input', this.checkFormInput.bind(this));
+    //this.validatedForm.addEventListener('submit', this.checkFormInput.bind(this));
   }
 
   checkInputValidity() {
@@ -25,6 +26,15 @@ export default class SearchInput {
     this.resetError();
 
     return true;
+  }
+
+  checkFormInput() {
+    let isValidForm = true;
+    if (!this.checkInputValidity(this.inputElement)){
+       isValidForm = false;
+    }
+    this.setSubmitButtonState(isValidForm);
+    return isValidForm;
   }
 
   activateError() {
