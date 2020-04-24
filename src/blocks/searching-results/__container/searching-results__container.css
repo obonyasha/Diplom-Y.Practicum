@@ -2,7 +2,7 @@
 
 .searching-results__container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat( auto-fit, minmax(32%, 1fr));
   grid-gap: 16px 16px;
   justify-content: center;
   width: 86%;
@@ -17,11 +17,11 @@
   }
 }
 
-@media screen and (max-width: 650px) and (min-width: 451px) {
+/*@media screen and (max-width: 650px) and (min-width: 451px) {
   .searching-results__container {
     grid-template-columns: repeat(2, 1fr);
   }
-}
+}*/
 
 @media screen and (max-width: 450px) {
   .searching-results__container {

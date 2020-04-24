@@ -1,6 +1,7 @@
 .searching-results__image {
-  width: 100%;
-  height: auto;
+  max-width: 100%;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
+  object-fit: cover;
+  object-position: top;
 }

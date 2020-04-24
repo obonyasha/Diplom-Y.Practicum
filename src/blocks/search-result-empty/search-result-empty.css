@@ -1,0 +1,15 @@
+@import url(./__image/search-result-empty__image.css);
+@import url(./subtitled_search-result-empty/subtitled_search-result-empty.css);
+@import url(./title_search-result-empty/title_search-result-empty.css);
+
+.search-result-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 86px;
+  padding-bottom: 88px;
+  background: #F5F6F7;
+  display: none;
+}

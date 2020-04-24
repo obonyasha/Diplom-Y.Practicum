@@ -8,12 +8,7 @@ export default class SearchInput {
   }
 
   _setHandlers() {
-    /*this.inputElement.oninput = () => {
-      const isValidForm = this.checkInputValidity();
-      this.setSubmitButtonState(isValidForm);
-    };*/
     this.inputElement.addEventListener('input', this.checkFormInput.bind(this));
-    //this.validatedForm.addEventListener('submit', this.checkFormInput.bind(this));
   }
 
   checkInputValidity() {
