@@ -5,6 +5,9 @@ import NewsCardList from "./js/components/NewsCardList";
 import NewsApi from "./js/modules/NewsApi";
 import SearchInput from "./js/components/SearchInput";
 import DataStorage from "./js/modules/DataStorage";
+import SearchResalEmpty from "./js/components/SearchResalEmpty";
+import Preloader from "./js/components/Preloader";
+
 
 const cardListElement = document.querySelector('.searching-results__container');
 const searchForm = document.querySelector('.search__form');
@@ -16,8 +19,12 @@ const searchingResultsElement = document.querySelector('.searching-results');
 const preloaderElement = document.querySelector('.preloader');
 const SHOW_MORE_BTN = document.querySelector('.searching-results__btn-show-more');
 
+
+const searchResalEmpty = new SearchResalEmpty(searchResalEmptyElement, 'open');
+const preloader = new Preloader(preloaderElement, 'open');
 const dataStorage = new DataStorage();
 const newsCard = new NewsCard();
+const searchInput = new SearchInput(/*newsCardList, */inputSearchElement, buttonElement, errorElement);
 const newsApi = new NewsApi(
   {
     baseUrl: 'https://newsapi.org/v2',
@@ -30,23 +37,19 @@ const newsCardList = new NewsCardList({
   cardListElement,
   newsCard,
   newsApi,
-  inputSearchElement,
-  searchResalEmptyElement,
-  showClassName:'open',
+  searchInput,
+  searchResalEmpty,
+  preloader,
   searchingResultsElement,
   preloaderElement,
   dataStorage,
-  showMoreBtn: SHOW_MORE_BTN
+  showMoreBtn: SHOW_MORE_BTN,
+  showClassName: 'open'
 });
 
-//newsCardList.getNewsFromServer();
-
-const searchInput = new SearchInput(newsCardList, inputSearchElement, buttonElement, errorElement);
 
 searchForm.addEventListener('submit', function (event) {
   event.preventDefault();
-  newsCardList.closeSearchResalEmptyElement();
-  newsCardList.resetCardListElement();
   newsCardList.getNewsFromServer();
 }
 );

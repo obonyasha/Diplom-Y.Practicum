@@ -1,8 +1,8 @@
 export default class SearchInput {
-  constructor(getNewsCallback, inputElement, buttonElement, errorElement) {
+  constructor(/*getNewsCallback, */inputElement, buttonElement, errorElement) {
     this.inputElement = inputElement;
     this.buttonElement = buttonElement;
-    this.getNewsCallback = getNewsCallback;
+    /*this.getNewsCallback = getNewsCallback;*/
     this.errorElement = errorElement;
     this._setHandlers();
   }
@@ -47,5 +47,9 @@ export default class SearchInput {
     } else (
       this.buttonElement.setAttribute('disabled', true)
     );
+  }
+
+  getInputValue() {
+    return this.inputElement.value;
   }
 }
