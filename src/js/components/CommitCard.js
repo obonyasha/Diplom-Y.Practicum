@@ -1,11 +1,14 @@
 export default class CommitCard {
-  constructor() { }
+  constructor(publicationDate) {
+    this.publicationDate = publicationDate;
+  }
 
   getTemplate(data) {
     const author = data.author || data.commit.author || {};
+    const publicationDateCommit = this.publicationDate.getDateCommit(data);
     const template = `<div class="commit-history__card carousel-cell">
     <div class="commit-history__date">
-      <p class="commit-history__publication-date">${data.commit.committer.date}</p>
+      <p class="commit-history__publication-date">${publicationDateCommit}</p>
       <div class="author author_commit-history">
         <img src="${author.avatar_url}" alt="Фото автора коммита" class="author__avatar author__avatar_github">
         <div class="author__info author__info_commit-history">
@@ -21,3 +24,5 @@ export default class CommitCard {
     return template;
   }
 }
+
+

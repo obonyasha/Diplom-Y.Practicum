@@ -7,6 +7,7 @@ import SearchInput from "./js/components/SearchInput";
 import DataStorage from "./js/modules/DataStorage";
 import SearchResalEmpty from "./js/components/SearchResalEmpty";
 import Preloader from "./js/components/Preloader";
+import PublicationDate from "./js/utils/PublicationDate";
 
 
 const cardListElement = document.querySelector('.searching-results__container');
@@ -19,11 +20,11 @@ const searchingResultsElement = document.querySelector('.searching-results');
 const preloaderElement = document.querySelector('.preloader');
 const SHOW_MORE_BTN = document.querySelector('.searching-results__btn-show-more');
 
-
+const publicationDate = new PublicationDate();
 const searchResalEmpty = new SearchResalEmpty(searchResalEmptyElement, 'open');
 const preloader = new Preloader(preloaderElement, 'open');
 const dataStorage = new DataStorage();
-const newsCard = new NewsCard();
+const newsCard = new NewsCard(publicationDate);
 const searchInput = new SearchInput(/*newsCardList, */inputSearchElement, buttonElement, errorElement);
 const newsApi = new NewsApi(
   {
