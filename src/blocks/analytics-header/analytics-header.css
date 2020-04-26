@@ -1,4 +1,3 @@
-@import url(./subtitled-m_analytics-header/subtitled-m_analytics-header.css);
 @import url(./subtitled-m_bold/subtitled-m_bold.css);
 @import url(./subtitled-m_news/subtitled-m_news.css);
 @import url(./title-m_analytics-header/title-m_analytics-header.css);
@@ -21,7 +20,7 @@
 
 @media screen and (max-width: 320px) {
   .analytics-header {
-    padding-top: 16px;
+    padding-top: 0;
     padding-bottom: 24px;
   }
 }

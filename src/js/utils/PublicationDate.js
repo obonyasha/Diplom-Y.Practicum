@@ -17,11 +17,10 @@ export default class PublicationDate {
       'ноября',
       'декабря'
     ];
-
-    const year = publicationDate.getFullYear().toString();
-    const date = publicationDate.getDate().toString();
-    const monthName = months[publicationDate.getMonth()].toString();
-    const formatted = date + ' ' + monthName + ',' + ' ' + year;
+    const year = publicationDate.getFullYear();
+    const date = publicationDate.getDate();
+    const monthName = months[publicationDate.getMonth()];
+    const formatted = `${date} ${monthName}, ${year}`;
 
     return formatted;
   }
@@ -42,18 +41,16 @@ export default class PublicationDate {
       'ноября',
       'декабря'
     ];
-
-    const year = publicationDate.getFullYear().toString();
-    const date = publicationDate.getDate().toString();
-    const monthName = months[publicationDate.getMonth()].toString();
-    const formatted = date + ' ' + monthName + ',' + ' ' + year;
+    const year = publicationDate.getFullYear();
+    const date = publicationDate.getDate();
+    const monthName = months[publicationDate.getMonth()];
+    const formatted = `${date} ${monthName}, ${year}`;
 
     return formatted;
   }
 
 
-  getDay(data) {
-    publicationDate = new Date(`${data.commit.committer.date}`);
+  getCustomDay(daysObj) {
     const days = [
       'ВС',
       'ПН',
@@ -63,7 +60,10 @@ export default class PublicationDate {
       'ПТ',
       'СБ'
     ];
-    const dayName = days[date.getDay()];
-    return dayName;
+    const date = daysObj.getDate();
+    const dayName = days[daysObj.getDay()];
+    const formatted = `${dayName}, ${date}`
+
+    return formatted;
   }
 }

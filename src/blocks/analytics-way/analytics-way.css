@@ -1,0 +1,20 @@
+@import url(./subtitled-m_analytics-way/subtitled-m_analytics-way.css);
+
+.analytics-way {
+  display: flex;
+  align-items: flex-start;
+  width: 86%;
+  padding-top: 40px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 321px) {
+  .analytics-way  {
+    padding-top: 32px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .analytics-way  {
+    padding-top: 16px;
+  }
+}

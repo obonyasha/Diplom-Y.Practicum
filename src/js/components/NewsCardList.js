@@ -42,9 +42,11 @@ export default class NewsCardList {
   }
 
   getNewsFromServer() {
+    const inputValue = this.searchInput.getInputValue();
     this.clearData();
+    this.dataStorage.setInputValue(inputValue);
     this.preloader.openPreloader();
-    this.newsApi.getNews(this.searchInput.getInputValue()).then(res => {
+    this.newsApi.getNews(inputValue).then(res => {
       this.preloader.closePreloader();
       if (res.totalResults !== 0) {
         this.dataStorage.setData(res.articles);
