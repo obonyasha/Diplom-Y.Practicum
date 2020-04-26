@@ -1,6 +1,6 @@
 @import url(../__publication-date/commit-history__publication-date.css);
 
-.commit-history__date {
+.commit-history__data {
   display: flex;
   flex-direction: column;
   width: 88%;

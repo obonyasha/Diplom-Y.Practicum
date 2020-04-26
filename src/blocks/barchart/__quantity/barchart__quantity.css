@@ -1,12 +1,7 @@
-@import url(../__quantity_mon/barchart__quantity_mon.css);
-@import url(../__quantity_tues/barchart__quantity_tues.css);
-@import url(../__quantity_wed/barchart__quantity_wed.css);
-@import url(../__quantity_thur/barchart__quantity_thur.css);
-@import url(../__quantity_fri/barchart__quantity_fri.css);
-@import url(../__quantity_sat/barchart__quantity_sat.css);
-@import url(../__quantity_sun/barchart__quantity_sun.css);
+@import url(../__value/barchart__value.css);
 
 .barchart__quantity {
+  width: 15%;
   height: 24px;
   background-color: #2F71E5;
   color: #fff;

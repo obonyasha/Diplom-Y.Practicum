@@ -1,11 +1,15 @@
-@import url(../__list/barchart__list.css);
-
 .barchart__day {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  list-style-type: none;
-  padding: 0;
+  min-width: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #1A1B22;
   margin: 0;
+}
+
+@media screen and (max-width: 320px) {
+  .barchart__day {
+    margin-top: 24px;
+  }
 }
