@@ -1,4 +1,4 @@
-const SHOW_CARDS_COUNT = 30;
+import {SHOW_CARDS_COUNT} from "../constants/constants.js";
 
 export default class NewsCardList {
   constructor(params) {
@@ -12,8 +12,8 @@ export default class NewsCardList {
     this.dataStorage = params.dataStorage;
     this.showMoreBtn = params.showMoreBtn;
     this.showClassName = params.showClassName;
-    this._setHandlers();
     this.startIndex = 0;
+    this._setHandlers();
   }
 
   _setHandlers() {
@@ -49,6 +49,7 @@ export default class NewsCardList {
     this.newsApi.getNews(inputValue).then(res => {
       this.preloader.closePreloader();
       if (res.totalResults !== 0) {
+        this.dataStorage.setTotalResults(res.totalResults);
         this.dataStorage.setData(res.articles);
         this.addCardNews();
         this.searchingResultsElement.classList.add(this.showClassName);

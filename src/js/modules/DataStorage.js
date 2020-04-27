@@ -1,9 +1,9 @@
 const newsDataKey = 'newsDataKey';
 const inputValueKey = 'inputValueKey';
+const totalResults = 'totalResults';
 
 export default class DataStorage {
   constructor() {
-    //this.removeData();
   }
   setData(data) {
     localStorage.setItem(newsDataKey, JSON.stringify(data));
@@ -16,6 +16,7 @@ export default class DataStorage {
   removeData() {
     localStorage.removeItem(newsDataKey);
     localStorage.removeItem(inputValueKey);
+    localStorage.removeItem(totalResults);
   }
 
   setInputValue(inputValue) {
@@ -26,4 +27,11 @@ export default class DataStorage {
     return JSON.parse(localStorage.getItem(inputValueKey));
   }
 
+  setTotalResults(data) {
+    localStorage.setItem(totalResults, JSON.stringify(data));
+  }
+
+  getTotalResults() {
+    return JSON.parse(localStorage.getItem(totalResults));
+  }
 }

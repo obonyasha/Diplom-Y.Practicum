@@ -1,9 +1,10 @@
 export default class SearchInput {
-  constructor(/*getNewsCallback, */inputElement, buttonElement, errorElement) {
-    this.inputElement = inputElement;
-    this.buttonElement = buttonElement;
-    /*this.getNewsCallback = getNewsCallback;*/
-    this.errorElement = errorElement;
+  constructor(params) {
+    this.inputElement = params.inputElement;
+    this.buttonElement = params.buttonElement;
+    this.errorElement = params.errorElement;
+    //this.searhForm = params.searhForm;
+    //this.newsCardList = params.newsCardList;
     this._setHandlers();
   }
 

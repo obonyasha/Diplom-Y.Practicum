@@ -1,14 +1,15 @@
 export default class CommitCardList {
-  constructor(commitListElement, commitCard, githubApi, flkty) {
-    this.commitListElement = commitListElement;
-    this.commitCard = commitCard;
-    this.githubApi = githubApi;
-    this.flkty = flkty;
+  constructor(params) {
+    this.commitListElement = params.commitListElement;
+    this.commitCard = params.commitCard;
+    this.githubApi = params.githubApi;
+    this.flkty = params.flkty;
+    this.arrayCommits = params.arrayCommits;
   }
 
   addCardCommits(data) {
     let allTemplates = '';
-    const data_20 = data.splice(0,20);//превратить в метод и перенести во вспомогательный (наверно)
+    const data_20 = this.arrayCommits.getArrayCommit(data);
     for (const element of data_20) {
       const templateCommitsCard = this.commitCard.getTemplate(element);
       allTemplates += templateCommitsCard;
@@ -22,6 +23,6 @@ export default class CommitCardList {
     })
   }
   getNodes(str) {
-    return new DOMParser().parseFromString(str, 'text/html').body.childNodes; //метод перенести во вспомогательный (наверно)
+    return new DOMParser().parseFromString(str, 'text/html').body.childNodes;
   }
 }

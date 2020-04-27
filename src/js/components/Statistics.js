@@ -1,25 +1,30 @@
 export default class Statistics {
-  constructor(dataStorage, publicationDate, statisticsElement, barchartElement) {
-    this.dataStorage = dataStorage;
-    this.publicationDate = publicationDate;
-    this.statisticsElement = statisticsElement;
-    this.barchartElement = barchartElement;
+  constructor(params) {
+    this.dataStorage = params.dataStorage;
+    this.publicationDate = params.publicationDate;
+    this.statisticsElement = params.statisticsElement;
+    this.barchartElement = params.barchartElement;
+    this.titleHeaderElement = params.titleHeaderElement;
+    this.subtitledNewsElement = params.subtitledNewsElement;
+    this.totalResultsElement = params.totalResultsElement;
     this.totalSum = 0;
+    this.countTitle = 0;
     this.analitycsDays = {};
+    this.inputValue = this.dataStorage.getInputValue();
+    this.totalResults = this.dataStorage.getTotalResults();
     this.calculateData();
   }
 
   calculateData() {
     const data = this.dataStorage.getData();
-    const inputValue = this.dataStorage.getInputValue();
-    if (!data || !inputValue) {
+    if (!data || !this.inputValue) {
       return;
     };
 
     const analitycsDays = this.initAnalitycsDaysObj();
     let totalSum = 0;
     data.forEach(news => {
-      const regEx = new RegExp(inputValue, 'gi');
+      const regEx = new RegExp(this.inputValue, 'gi');
       let countTitle = 0;
       let countDescription = 0;
       if (news.title.match(regEx)) {
@@ -30,6 +35,7 @@ export default class Statistics {
       }
       const sumCount = countTitle + countDescription;
       totalSum += sumCount;
+      this.countTitle += countTitle;
       const publicationDate = new Date(`${news.publishedAt}`);
       const date = this.publicationDate.getCustomDay(publicationDate);
 
@@ -68,6 +74,12 @@ export default class Statistics {
       const percent = this.analitycsDays[key] / this.totalSum * 100;
       this.addRowBarchart(key, this.analitycsDays[key], percent);
     }
+  }
+
+  initHeader() {
+    this.titleHeaderElement.textContent = 'Вы' + ' ' + 'спросили' + ':' + ' ' + '«' + this.inputValue + '»';
+    this.totalResultsElement.textContent = this.totalResults;
+    this.subtitledNewsElement.textContent = this.countTitle;
   }
 
   getTemplateScale() {

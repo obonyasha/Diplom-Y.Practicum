@@ -3,9 +3,10 @@ export default class NewsApi {
     this.baseUrl = options.baseUrl;
     this.apiKey = options.apiKey;
     this.pageSize = options.pageSize;
+    this.daysAgo = options.daysAgo;
     this.to = new Date();
     this.from = new Date();
-    this.from.setDate(this.from.getDate()-6);
+    this.from.setDate(this.from.getDate()-this.daysAgo);
   }
 
   getNews(querySearch) {

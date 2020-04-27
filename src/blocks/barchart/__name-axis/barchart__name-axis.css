@@ -1,8 +1,5 @@
-@import url(../__name-axis_x/barchart__name-axis_x.css);
-
 .barchart__name-axis {
   margin: 0;
-  max-width: 50px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -11,4 +8,5 @@
   letter-spacing: 0.4px;
   text-transform: uppercase;
   color: #B6BCBF !important;
+  max-width: 50px;
 }
