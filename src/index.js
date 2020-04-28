@@ -1,9 +1,6 @@
 import "./style.css";
-
-import { DAYS_AGO, PAGE_SIZE } from "./js/constants/constants.js";
-import {
-  CARD_LIST_ELEMENT, SEARCH_FORM, INPUT_SEARCH_ELEMENT, BTN_SEARH_ELEMENT, ERROR_ELEMENT,
-  SEARCHING_RESULT_EMPTI_ELEMENT, SEARCHING_RESULTS_ELEMENT, PRELOADER_ELEMENT, BTN_SHOW_MORE
+import {DAYS_AGO, PAGE_SIZE, CARD_LIST_ELEMENT, SEARCH_FORM, INPUT_SEARCH_ELEMENT, BTN_SEARH_ELEMENT, ERROR_ELEMENT,
+  SEARCHING_RESULT_EMPTI_ELEMENT, SEARCHING_RESULTS_ELEMENT, PRELOADER_ELEMENT, BTN_SHOW_MORE, SHOW_CARDS_COUNT
 } from "./js/constants/constants.js";
 import NewsCard from "./js/components/NewsCard";
 import NewsCardList from "./js/components/NewsCardList";
@@ -44,7 +41,8 @@ const newsCardList = new NewsCardList({
   preloaderElement: PRELOADER_ELEMENT,
   dataStorage,
   showMoreBtn: BTN_SHOW_MORE,
-  showClassName: 'open'
+  showClassName: 'open',
+  showCardsCount: SHOW_CARDS_COUNT
 });
 
 

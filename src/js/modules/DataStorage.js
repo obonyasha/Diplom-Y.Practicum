@@ -1,37 +1,35 @@
-const newsDataKey = 'newsDataKey';
-const inputValueKey = 'inputValueKey';
-const totalResults = 'totalResults';
+import {NEWS_DATA_KEY, INPUT_VALUE_KEY, TOTAL_RESULTS} from "../constants/constants.js";
 
 export default class DataStorage {
   constructor() {
   }
   setData(data) {
-    localStorage.setItem(newsDataKey, JSON.stringify(data));
+    localStorage.setItem(NEWS_DATA_KEY, JSON.stringify(data));
   }
 
   getData() {
-    return JSON.parse(localStorage.getItem(newsDataKey));
+    return JSON.parse(localStorage.getItem(NEWS_DATA_KEY));
   }
 
   removeData() {
-    localStorage.removeItem(newsDataKey);
-    localStorage.removeItem(inputValueKey);
-    localStorage.removeItem(totalResults);
+    localStorage.removeItem(NEWS_DATA_KEY);
+    localStorage.removeItem(INPUT_VALUE_KEY);
+    localStorage.removeItem(TOTAL_RESULTS);
   }
 
   setInputValue(inputValue) {
-    localStorage.setItem(inputValueKey, JSON.stringify(inputValue));
+    localStorage.setItem(INPUT_VALUE_KEY, JSON.stringify(inputValue));
   }
 
   getInputValue() {
-    return JSON.parse(localStorage.getItem(inputValueKey));
+    return JSON.parse(localStorage.getItem(INPUT_VALUE_KEY));
   }
 
   setTotalResults(data) {
-    localStorage.setItem(totalResults, JSON.stringify(data));
+    localStorage.setItem(TOTAL_RESULTS, JSON.stringify(data));
   }
 
   getTotalResults() {
-    return JSON.parse(localStorage.getItem(totalResults));
+    return JSON.parse(localStorage.getItem(TOTAL_RESULTS));
   }
 }

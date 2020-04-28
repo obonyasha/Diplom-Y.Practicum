@@ -1,5 +1,3 @@
-import {SHOW_CARDS_COUNT} from "../constants/constants.js";
-
 export default class NewsCardList {
   constructor(params) {
     this.cardListElement = params.cardListElement;
@@ -12,6 +10,7 @@ export default class NewsCardList {
     this.dataStorage = params.dataStorage;
     this.showMoreBtn = params.showMoreBtn;
     this.showClassName = params.showClassName;
+    this.showCardsCount = params.showCardsCount;
     this.startIndex = 0;
     this._setHandlers();
   }
@@ -23,8 +22,8 @@ export default class NewsCardList {
   addCardNews() {
     const data = this.dataStorage.getData();
     const endCounterElements = data.length - this.startIndex;
-    if (endCounterElements >= SHOW_CARDS_COUNT) {
-      for (let index = this.startIndex; index < this.startIndex + SHOW_CARDS_COUNT; index++) {
+    if (endCounterElements > this.showCardsCount) {
+      for (let index = this.startIndex; index < this.startIndex + this.showCardsCount; index++) {
         this.showMoreBtn.classList.add(this.showClassName);
         const element = data[index];
         const templateNewsCard = this.newsCard.getTemplate(element);
@@ -38,7 +37,7 @@ export default class NewsCardList {
         this.showMoreBtn.classList.remove(this.showClassName);
       }
     }
-    this.startIndex += SHOW_CARDS_COUNT + 1;
+    this.startIndex += this.showCardsCount;
   }
 
   getNewsFromServer() {
