@@ -7,10 +7,10 @@ export default class CommitCardList {
     this.arrayCommits = params.arrayCommits;
   }
 
-  addCardCommits(data) {
+  addCardCommits(commits) {
     let allTemplates = '';
-    const data_20 = this.arrayCommits.getArrayCommit(data);
-    for (const element of data_20) {
+    const commitsSegment = this.arrayCommits.getArrayCommit(commits);
+    for (const element of commitsSegment) {
       const templateCommitsCard = this.commitCard.getTemplate(element);
       allTemplates += templateCommitsCard;
     }
@@ -21,6 +21,10 @@ export default class CommitCardList {
     this.githubApi.getCommits().then(res => {
       this.addCardCommits(res);
     })
+    .catch((err) => {
+      alert(err);
+      throw err;
+    });
   }
   getNodes(str) {
     return new DOMParser().parseFromString(str, 'text/html').body.childNodes;

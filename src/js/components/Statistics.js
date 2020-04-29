@@ -16,27 +16,27 @@ export default class Statistics {
   }
 
   calculateData() {
-    const data = this.dataStorage.getData();
-    if (!data || !this.inputValue) {
+    const news = this.dataStorage.getData();
+    if (!news || !this.inputValue) {
       return;
     };
 
     const analitycsDays = this.initAnalitycsDaysObj();
     let totalSum = 0;
-    data.forEach(news => {
+    news.forEach(cardNews => {
       const regEx = new RegExp(this.inputValue, 'gi');
       let countTitle = 0;
       let countDescription = 0;
-      if (news.title.match(regEx)) {
-        countTitle = news.title.match(regEx).length;
+      if (cardNews.title.match(regEx)) {
+        countTitle = cardNews.title.match(regEx).length;
       }
-      if (news.description.match(regEx)) {
-        countDescription = news.description.match(regEx).length;
+      if (cardNews.description.match(regEx)) {
+        countDescription = cardNews.description.match(regEx).length;
       }
       const sumCount = countTitle + countDescription;
       totalSum += sumCount;
       this.countTitle += countTitle;
-      const publicationDate = new Date(`${news.publishedAt}`);
+      const publicationDate = new Date(`${cardNews.publishedAt}`);
       const date = this.publicationDate.getCustomDay(publicationDate);
 
       /*analitycsDays[date] = !analitycsDays[date] ? sumCount : analitycsDays[date] + sumCount;*/

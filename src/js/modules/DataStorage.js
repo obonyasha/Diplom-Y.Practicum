@@ -3,8 +3,8 @@ import {NEWS_DATA_KEY, INPUT_VALUE_KEY, TOTAL_RESULTS} from "../constants/consta
 export default class DataStorage {
   constructor() {
   }
-  setData(data) {
-    localStorage.setItem(NEWS_DATA_KEY, JSON.stringify(data));
+  setData(news) {
+    localStorage.setItem(NEWS_DATA_KEY, JSON.stringify(news));
   }
 
   getData() {
@@ -25,8 +25,8 @@ export default class DataStorage {
     return JSON.parse(localStorage.getItem(INPUT_VALUE_KEY));
   }
 
-  setTotalResults(data) {
-    localStorage.setItem(TOTAL_RESULTS, JSON.stringify(data));
+  setTotalResults(news) {
+    localStorage.setItem(TOTAL_RESULTS, JSON.stringify(news));
   }
 
   getTotalResults() {

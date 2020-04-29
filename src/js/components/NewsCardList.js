@@ -20,42 +20,49 @@ export default class NewsCardList {
   }
 
   addCardNews() {
-    const data = this.dataStorage.getData();
-    const endCounterElements = data.length - this.startIndex;
+    const news = this.dataStorage.getData();
+    if (!news) {
+      return;
+    };
+    const endCounterElements = news.length - this.startIndex;
     if (endCounterElements > this.showCardsCount) {
       for (let index = this.startIndex; index < this.startIndex + this.showCardsCount; index++) {
         this.showMoreBtn.classList.add(this.showClassName);
-        const element = data[index];
+        const element = news[index];
         const templateNewsCard = this.newsCard.getTemplate(element);
         this.cardListElement.insertAdjacentHTML('beforeend', templateNewsCard);
       }
     } else {
       for (let index = this.startIndex; index < this.startIndex + endCounterElements; index++) {
-        const element = data[index];
+        const element = news[index];
         const templateNewsCard = this.newsCard.getTemplate(element);
         this.cardListElement.insertAdjacentHTML('beforeend', templateNewsCard);
         this.showMoreBtn.classList.remove(this.showClassName);
       }
     }
     this.startIndex += this.showCardsCount;
+    this.searchingResultsElement.classList.add(this.showClassName);
   }
 
   getNewsFromServer() {
     const inputValue = this.searchInput.getInputValue();
     this.clearData();
-    this.dataStorage.setInputValue(inputValue);
     this.preloader.openPreloader();
     this.newsApi.getNews(inputValue).then(res => {
       this.preloader.closePreloader();
       if (res.totalResults !== 0) {
         this.dataStorage.setTotalResults(res.totalResults);
         this.dataStorage.setData(res.articles);
+        this.dataStorage.setInputValue(inputValue);
         this.addCardNews();
-        this.searchingResultsElement.classList.add(this.showClassName);
       } else {
         this.searchResalEmpty.openSearchResalEmptyElement();
       }
     })
+    .catch((err) => {
+      alert(err);
+      throw err;
+    });
   }
 
   resetCardListElement() {

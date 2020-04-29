@@ -19,7 +19,8 @@ const newsCard = new NewsCard(publicationDate);
 const searchInput = new SearchInput({
   inputElement: INPUT_SEARCH_ELEMENT,
   buttonElement: BTN_SEARH_ELEMENT,
-  errorElement: ERROR_ELEMENT
+  errorElement: ERROR_ELEMENT,
+  dataStorage
 });
 const newsApi = new NewsApi(
   {
@@ -51,3 +52,5 @@ SEARCH_FORM.addEventListener('submit', function (event) {
   newsCardList.getNewsFromServer();
 }
 );
+newsCardList.addCardNews();
+searchInput.setInputValue();

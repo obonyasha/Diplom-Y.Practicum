@@ -3,8 +3,7 @@ export default class SearchInput {
     this.inputElement = params.inputElement;
     this.buttonElement = params.buttonElement;
     this.errorElement = params.errorElement;
-    //this.searhForm = params.searhForm;
-    //this.newsCardList = params.newsCardList;
+    this.dataStorage = params.dataStorage;
     this._setHandlers();
   }
 
@@ -18,9 +17,7 @@ export default class SearchInput {
       this.activateError();
       return false;
     }
-
     this.resetError();
-
     return true;
   }
 
@@ -52,5 +49,10 @@ export default class SearchInput {
 
   getInputValue() {
     return this.inputElement.value;
+  }
+
+  setInputValue() {
+    this.inputValue = this.dataStorage.getInputValue();
+    this.inputElement.value = this.inputValue;
   }
 }

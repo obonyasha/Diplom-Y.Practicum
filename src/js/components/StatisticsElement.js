@@ -15,12 +15,12 @@ export default class StatisticsElement {
     return templateBarchart;
   }
 
-  getTemplateScale(data) {
+  getTemplateScale(value) {
     const templateScale = `<p class="barchart__scale-value barchart__name-axis">0</p>
-    <p class="barchart__scale-value barchart__name-axis">${data['25']}</p>
-    <p class="barchart__scale-value barchart__name-axis">${data['50']}</p>
-    <p class="barchart__scale-value barchart__name-axis">${data['75']}</p>
-    <p class="barchart__scale-value barchart__name-axis">${data['100']}</p>`;
+    <p class="barchart__scale-value barchart__name-axis">${value['25']}</p>
+    <p class="barchart__scale-value barchart__name-axis">${value['50']}</p>
+    <p class="barchart__scale-value barchart__name-axis">${value['75']}</p>
+    <p class="barchart__scale-value barchart__name-axis">${value['100']}</p>`;
     return templateScale;
   }
 }
