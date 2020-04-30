@@ -13,6 +13,7 @@ export default class NewsCardList {
     this.showCardsCount = params.showCardsCount;
     this.errorApiElement = params.errorApiElement;
     this.errorApiValue = params.errorApiValue;
+    //this.sanitizeHtml = params.sanitizeHtml;
     this.startIndex = 0;
     this._setHandlers();
   }
@@ -48,9 +49,11 @@ export default class NewsCardList {
 
   getNewsFromServer() {
     const inputValue = this.searchInput.getInputValue();
+    this.searchInput.disablElementsForm();
     this.clearData();
     this.preloader.openPreloader();
     this.newsApi.getNews(inputValue).then(res => {
+      this.searchInput.enableElementsForm();
       this.preloader.closePreloader();
       if (res.totalResults !== 0) {
         this.dataStorage.setTotalResults(res.totalResults);
@@ -61,12 +64,12 @@ export default class NewsCardList {
         this.searchResalEmpty.openSearchResalEmptyElement();
       }
     })
-    .catch((err) => {
-      this.preloader.closePreloader();
-      this.errorApiValue.textContent = err;
-      this.errorApiElement.classList.add(this.showClassName);
-      throw err;
-    });
+      .catch((err) => {
+        this.preloader.closePreloader();
+        this.errorApiValue.textContent = err;
+        this.errorApiElement.classList.add(this.showClassName);
+        throw err;
+      });
   }
 
   resetCardListElement() {

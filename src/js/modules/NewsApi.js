@@ -21,7 +21,7 @@ export default class NewsApi {
         if (res.ok) {
           return res.json();
         }
-        return Promise.reject(`Ошибка: ${res.status}`);
+        return Promise.reject(`Запрос завершился с ошибкой. Ошибка: ${res.status}`);
       })
       .catch((err) => {
         this.preloader.closePreloader();

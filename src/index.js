@@ -12,12 +12,14 @@ import DataStorage from "./js/modules/DataStorage";
 import SearchResalEmpty from "./js/components/SearchResalEmpty";
 import Preloader from "./js/components/Preloader";
 import PublicationDate from "./js/utils/PublicationDate";
+import SanitizeHtml from "./js/utils/SanitizeHtml";
 
+const sanitizeHtml = new SanitizeHtml();
 const publicationDate = new PublicationDate();
 const searchResalEmpty = new SearchResalEmpty(SEARCHING_RESULT_EMPTI_ELEMENT, 'open');
 const preloader = new Preloader(PRELOADER_ELEMENT, 'open');
 const dataStorage = new DataStorage();
-const newsCard = new NewsCard(publicationDate);
+const newsCard = new NewsCard(publicationDate, sanitizeHtml);
 const searchInput = new SearchInput({
   inputElement: INPUT_SEARCH_ELEMENT,
   buttonElement: BTN_SEARH_ELEMENT,
@@ -51,7 +53,7 @@ const newsCardList = new NewsCardList({
   showClassName: 'open',
   showCardsCount: SHOW_CARDS_COUNT,
   errorApiElement: ERROR_API,
-  errorApiValue: ERROR_API_VALUE
+  errorApiValue: ERROR_API_VALUE,
 });
 
 

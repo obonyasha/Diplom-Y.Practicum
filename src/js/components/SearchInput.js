@@ -55,4 +55,13 @@ export default class SearchInput {
     this.inputValue = this.dataStorage.getInputValue();
     this.inputElement.value = this.inputValue;
   }
+
+  disablElementsForm () {
+    this.buttonElement.setAttribute('disabled', true);
+    this.inputElement.setAttribute('disabled', true);
+  }
+  enableElementsForm () {
+    this.buttonElement.removeAttribute('disabled');
+    this.inputElement.removeAttribute('disabled');
+  }
 }
