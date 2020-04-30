@@ -1,7 +1,9 @@
 import "./style.css";
-import {DAYS_AGO, PAGE_SIZE, CARD_LIST_ELEMENT, SEARCH_FORM, INPUT_SEARCH_ELEMENT, BTN_SEARH_ELEMENT, ERROR_ELEMENT,
+import {
+  DAYS_AGO, PAGE_SIZE, CARD_LIST_ELEMENT, SEARCH_FORM, INPUT_SEARCH_ELEMENT, BTN_SEARH_ELEMENT, ERROR_ELEMENT,
   SEARCHING_RESULT_EMPTI_ELEMENT, SEARCHING_RESULTS_ELEMENT, PRELOADER_ELEMENT, BTN_SHOW_MORE, SHOW_CARDS_COUNT
 } from "./js/constants/constants.js";
+import {ERROR_API, ERROR_API_VALUE} from "./js/constants/constants.js";
 import NewsCard from "./js/components/NewsCard";
 import NewsCardList from "./js/components/NewsCardList";
 import NewsApi from "./js/modules/NewsApi";
@@ -28,7 +30,11 @@ const newsApi = new NewsApi(
     headers: null,
     apiKey: 'eb6322f065ff4b42adee81ee18055e29',
     pageSize: PAGE_SIZE,
-    daysAgo: DAYS_AGO
+    daysAgo: DAYS_AGO,
+    errorApiElement: ERROR_API,
+    showClassName: 'open',
+    preloader,
+    errorApiValue: ERROR_API_VALUE
   }
 );
 const newsCardList = new NewsCardList({
@@ -43,7 +49,9 @@ const newsCardList = new NewsCardList({
   dataStorage,
   showMoreBtn: BTN_SHOW_MORE,
   showClassName: 'open',
-  showCardsCount: SHOW_CARDS_COUNT
+  showCardsCount: SHOW_CARDS_COUNT,
+  errorApiElement: ERROR_API,
+  errorApiValue: ERROR_API_VALUE
 });
 
 

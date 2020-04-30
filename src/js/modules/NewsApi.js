@@ -4,9 +4,13 @@ export default class NewsApi {
     this.apiKey = options.apiKey;
     this.pageSize = options.pageSize;
     this.daysAgo = options.daysAgo;
+    this.errorApiElement = options.errorApiElement;
+    this.showClassName = options.showClassName;
+    this.preloader = options.preloader;
+    this.errorApiValue = options.errorApiValue;
     this.to = new Date();
     this.from = new Date();
-    this.from.setDate(this.from.getDate()-this.daysAgo);
+    this.from.setDate(this.from.getDate() - this.daysAgo);
   }
 
   getNews(querySearch) {
@@ -17,10 +21,12 @@ export default class NewsApi {
         if (res.ok) {
           return res.json();
         }
-        return Promise.reject(`Данные не получены. Ошибка: ${res.status}`);
+        return Promise.reject(`Ошибка: ${res.status}`);
       })
       .catch((err) => {
-        alert(err);
+        this.preloader.closePreloader();
+        this.errorApiValue.textContent = err;
+        this.errorApiElement.classList.add(this.showClassName);
         throw err;
       });
   }

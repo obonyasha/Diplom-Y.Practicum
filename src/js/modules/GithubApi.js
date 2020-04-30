@@ -1,5 +1,8 @@
 export default class GithubApi {
-  constructor() {
+  constructor(options) {
+    this.errorApiElement = options.errorApiElement;
+    this.showClassName = options.showClassName;
+    this.errorApiValue = options.errorApiValue;
   }
 
   getCommits() {
@@ -10,10 +13,11 @@ export default class GithubApi {
         if (res.ok) {
           return res.json();
         }
-        return Promise.reject(`Данные не получены. Ошибка: ${res.status}`);
+        return Promise.reject(`Ошибка: ${res.status}`);
       })
       .catch((err) => {
-        alert(err);
+        this.errorApiValue.textContent = err;
+        this.errorApiElement.classList.add(this.showClassName);
         throw err;
       });
   }

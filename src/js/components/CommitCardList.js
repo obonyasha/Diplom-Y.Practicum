@@ -5,6 +5,9 @@ export default class CommitCardList {
     this.githubApi = params.githubApi;
     this.flkty = params.flkty;
     this.arrayCommits = params.arrayCommits;
+    this.errorApiElement = params.errorApiElement;
+    this.showClassName = params.showClassName;
+    this.errorApiValue = params.errorApiValue;
   }
 
   addCardCommits(commits) {
@@ -22,7 +25,8 @@ export default class CommitCardList {
       this.addCardCommits(res);
     })
     .catch((err) => {
-      alert(err);
+      this.errorApiValue.textContent = err;
+      this.errorApiElement.classList.add(this.showClassName);
       throw err;
     });
   }

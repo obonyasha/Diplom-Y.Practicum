@@ -12,7 +12,6 @@ const BTN_SEARH_ELEMENT = document.querySelector('.search__button');
 const ERROR_ELEMENT = document.querySelector('.error-message');
 const SEARCHING_RESULT_EMPTI_ELEMENT = document.querySelector('.search-result-empty');
 const SEARCHING_RESULTS_ELEMENT  = document.querySelector('.searching-results');
-const PRELOADER_ELEMENT = document.querySelector('.preloader');
 const BTN_SHOW_MORE = document.querySelector('.searching-results__btn-show-more');
 const BARCHART_ELEMENT = document.querySelector('.barchart__body');
 const SCALE_TOP_ELEMENT = document.querySelector('.scale__top');
@@ -21,9 +20,14 @@ const TITLE_HEADER_ELEMENT = document.querySelector('.title-m_analytics-header')
 const SUBTITLE_NEWS_ELEMENT = document.querySelector('.count__title');
 const TOTAL_RESULTS_ELEMENT = document.querySelector('.total-results');
 const COMMIT_LIST_ELEMENT = document.querySelector('.main-carousel');
+const ERROR_API = document.querySelector('.error-api');
+const ERROR_API_VALUE = document.querySelector('.error-api__value');
+const PRELOADER_ELEMENT = document.querySelector('.preloader');
+
 
 export {NEWS_DATA_KEY, INPUT_VALUE_KEY, TOTAL_RESULTS};
-export {COUNT_COMMITS, COMMIT_LIST_ELEMENT};
+export {COUNT_COMMITS, COMMIT_LIST_ELEMENT}
+export {ERROR_API, ERROR_API_VALUE};
 export {DAYS_AGO, PAGE_SIZE, CARD_LIST_ELEMENT, SEARCH_FORM, INPUT_SEARCH_ELEMENT, BTN_SEARH_ELEMENT, ERROR_ELEMENT,
         SEARCHING_RESULT_EMPTI_ELEMENT, SEARCHING_RESULTS_ELEMENT, PRELOADER_ELEMENT, BTN_SHOW_MORE, SHOW_CARDS_COUNT};
 

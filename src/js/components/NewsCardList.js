@@ -11,6 +11,8 @@ export default class NewsCardList {
     this.showMoreBtn = params.showMoreBtn;
     this.showClassName = params.showClassName;
     this.showCardsCount = params.showCardsCount;
+    this.errorApiElement = params.errorApiElement;
+    this.errorApiValue = params.errorApiValue;
     this.startIndex = 0;
     this._setHandlers();
   }
@@ -60,7 +62,9 @@ export default class NewsCardList {
       }
     })
     .catch((err) => {
-      alert(err);
+      this.preloader.closePreloader();
+      this.errorApiValue.textContent = err;
+      this.errorApiElement.classList.add(this.showClassName);
       throw err;
     });
   }
