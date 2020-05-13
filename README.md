@@ -1,7 +1,7 @@
 # Дипломная работа курса "Фронтенд-разработчик"
 ## Степанова Татьяна  
-## https://github.com/obonyasha/Diplom-Y.Practicum
-## https://obonyasha.github.io/Diplom-Y.Practicum/
+## Репозиторий проекта https://github.com/obonyasha/Diplom-Y.Practicum
+## Публикация проекта https://obonyasha.github.io/Diplom-Y.Practicum/
 
 Актуальная версия проекта - **v0.0.1**  
 
