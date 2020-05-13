@@ -1,4 +1,6 @@
 .searching-results__btn-show-more {
+  display: flex;
+  justify-content: center;
   width: 288px;
   height: 64px;
   background: #fff;
@@ -6,6 +8,7 @@
   border: none;
   color: #1A1B22;
   margin-top: 64px;
+  display: none;
 }
 
 .searching-results__btn-show-more:hover {

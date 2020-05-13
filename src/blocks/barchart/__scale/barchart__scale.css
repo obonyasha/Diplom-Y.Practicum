@@ -1,4 +1,5 @@
 @import url(../__scale-value/barchart__scale-value.css);
+@import url(../__scale_bottom/barchart__scale_bottom.css);
 
 .barchart__scale {
   display: flex;

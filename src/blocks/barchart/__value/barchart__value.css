@@ -1,0 +1,6 @@
+.barchart__value{
+  margin: 0;
+  margin-left: 6px;
+  text-shadow: #000 1px 1px 0, #000 -1px -1px 0,
+  #000 -1px 1px 0, #000 1px -1px 0;
+}

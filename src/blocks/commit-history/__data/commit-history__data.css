@@ -1,0 +1,10 @@
+@import url(../__publication-date/commit-history__publication-date.css);
+
+.commit-history__data {
+  display: flex;
+  flex-direction: column;
+  width: 88%;
+  margin: 0;
+  margin: auto;
+  margin-top: 24px;
+}

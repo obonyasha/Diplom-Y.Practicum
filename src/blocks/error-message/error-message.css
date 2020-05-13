@@ -1,13 +1,13 @@
 .error-message {
-  color: #FF0000;;
-  font-size: 12px;
+  color: #ff8410;
+  font-family: Roboto;
+  font-size: 14px;
   line-height: 15px;
   transition: .3s;
-  padding: 0px;
+  padding: 10px;
   opacity: 0;
 }
 
 .input-container__invalid .error-message {
-  padding: 10px;
   opacity: 1;
 }

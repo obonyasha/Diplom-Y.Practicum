@@ -1,0 +1,20 @@
+@import url(../__day/barchart__day.css);
+
+.barchart__item {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-top: 56px;
+}
+
+.barchart__item:first-child{
+  margin-top: 0;
+}
+
+@media screen and (max-width: 320px) {
+  .barchart__item {
+    margin-top: 24px;
+  }
+}
